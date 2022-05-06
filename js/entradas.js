@@ -1,0 +1,41 @@
+var myObject = {
+    "unosfumes": [{
+        "img-src": "ico.png",
+        "fecha-De-Publicacion": "<time datetime='2022-03-28T02:04:18.929Z'>Domingo 05 de marzo 2022 </time>",
+        "a-href": "",
+        "a-href-tittle": "Breaking Bad - Walter White Blue Meth",
+        "how-to-tittle": "Breaking Bad - Walter White Blue Meth ",
+        "el-Post": " Breaking Bad - ",
+        "accion": "Walter White Blue Meth",
+        "postFoto1": "",
+        "altPostFoto1": "",
+        "postFoto2": " ",
+        "altPostFoto2": "",
+        "postFoto3": "",
+        "altPostFoto3": "",
+        "postFoto4": "",
+        "altPostFoto4": "",
+        "score-lighthouse": "",
+        "img-score-lighthouse": "",
+    }, {
+        "img-src": "ico.png",
+        "fecha-De-Publicacion": "<time datetime='2022-03-28T02:04:18.929Z'>Sábado 28 agosto 2021</time>",
+        "a-href": "#cris",
+        "a-href-tittle": "Pero el hubiera no existe",
+        "how-to-tittle": "Lo que me hubiera gustado",
+        "el-Post": "Lo que me hubiera gustado saber del cristal antes de haberlo fumado por primera vez - ",
+        "accion": "Ver",
+        "postFoto1": "",
+        "altPostFoto1": "",
+        "postFoto2": " ",
+        "altPostFoto2": "",
+        "postFoto3": "",
+        "altPostFoto3": "",
+        "postFoto4": "",
+        "altPostFoto4": "",
+        "score-lighthouse": "",
+        "img-score-lighthouse": "",
+    }, ]
+};
+
+w3.displayObject("siteMap", myObject);

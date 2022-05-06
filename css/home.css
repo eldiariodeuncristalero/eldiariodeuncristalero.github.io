@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html,
+html:after,
+html:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+    min-height: 105vh;
+    padding: 60px 20px 40px;
+    background: #5BABD1;
+    color: white;
+}
+
+.page-title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 45px;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .page-title {
+        font-size: 30px;
+    }
+}
+
+.page-body {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+    .page-body {
+        font-size: 18px;
+    }
+}
+
+.demo-block {
+    display: block;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.demo-block p {
+    line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+    .demo-block {
+        padding: 10px;
+    }
+}
+
+pre {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: scroll;
+}
+
+.btn {
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 200ms ease;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-container {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    padding: 40px;
+    margin: 80px auto 0;
+    background: white;
+    padding: 40px 40px;
+    text-align: center;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+    .popup-container {
+        padding: 40px 20px;
+    }
+}
+
+.popup-body {
+    box-sizing: border-box;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 1.35;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+    .popup-body {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+}
+
+.popup-btn {
+    box-sizing: border-box;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
