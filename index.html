@@ -3,7 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lo que me hubiera gustado haber sabido antes de</title>
+    <title>Nav Thing</title>
+    <link rel='prefetch' href="https://hihellomonster.github.io/xiibicon/fonts/xiibicon.eot">
+    <link rel="preload" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css"></noscript>
+    <link data-no-async=”1″ rel="stylesheet" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <link rel="stylesheet" href="css/style-index.css">
+    <script src="js/script-index.js"></script> -->
+
+    <link rel="icon" href="favicon-slamming.png" type="image/x-icon" sizes="192x192 " />
+    <link rel="apple-touch-icon" href="/images/crico-152.png">
+    <link rel="shortcut icon" href="favicon-slamming.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/gmail_2020q4_512dp.png">
+    <link rel="icon" sizes="32x32" href="/gmail_2020q4_32dp.png">
+    <link rel="icon" sizes="16x16" href="/gmail_2020q4_16dp.png">
+    <link rel="icon" sizes="192x192" href="favicon-slamming.png" id="favicon" type="image/x-icon" />
+    <link rel="preload" as="font">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+        * {
+            transition: 0.33s ease;
+        }
+        
+        .body-bar {
+            font-family: "Raleway";
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+        
+        .abs-center {
+            position: absolute;
+            width: 65%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .bar-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 45px;
+            overflow: hidden;
+            font-family: "Raleway";
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 200;
+            letter-spacing: 3px;
+        }
+        
+        .button-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 45px;
+        }
+        
+        .bar-button {
+            position: relative;
+            float: left;
+            height: 100%;
+            width: 25%;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-size: 26px;
+            line-height: 45px;
+            text-align: center;
+            transition: 0.33s ease;
+            text-decoration: none;
+            border-right: 1px solid rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+        
+        .bar-button:last-child {
+            border-right: none;
+        }
+        
+        .bar-button:hover {
+            background-color: rgb(12, 12, 12);
+            color: #fff;
+        }
+        
+        .white-bar {
+            position: absolute;
+            bottom: 0;
+            width: 25%;
+            height: 3px;
+            left: -25%;
+            background-color: #fff;
+        }
+    </style>
+    <style>
+        .tabs {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .tabs>label {
+            order: 1;
+            display: inline-block;
+            line-height: 50px;
+            margin: 0;
+            padding: 0 20px 0 20px;
+            font-weight: bold;
+        }
+        
+        .tabs>input[type="radio"] {
+            display: none;
+        }
+        
+        .tabs>input[type="radio"]:checked+label {}
+        
+        .tabs>input[type="radio"]:checked+label+div {
+            display: block;
+        }
+        
+        .tabs>div {
+            order: 3;
+            display: none;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            height: 100%;
+        }
+    </style>
+
+
 
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -371,319 +507,657 @@
             padding: 14px;
         }
     </style>
-    <style>
-        /* Then style the iframe to fit in the container div with full height and width */
-        
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 
-</head>
+    <script src="js/hi.js"></script>
+    <script src="js/entradas.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/hi-style.css">
+    <link rel='prefetch' href="lib/fonts/uncristalero.eot">
+    <link rel="preload" href="lib/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="lib/style.css"></noscript>
+    <link data-no-async=”1″ rel="stylesheet" href="lib/style.css" media="all">
+    <link rel="preload" href="lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="js/hi.js"></script>
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
+
+
 </head>
 
 <body>
 
-    <!-- partial:index.partial.html -->
-    <div id="content">
-        <article id="sf">
-            <h1>Cristal</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna lobortis, laoreet libero ut, vulputate risus. Aenean rhoncus, tellus nec cursus tempus, magna nisi pellentesque odio, mattis volutpat nunc mauris eget orci. Vivamus quis
-                tellus pellentesque, vulputate diam vel, facilisis risus. Nulla mi felis, euismod ac est in, ultrices tempus nisl. Ut et commodo mi. Sed rutrum porttitor est posuere ullamcorper. Aliquam dapibus nibh id viverra malesuada. Suspendisse quis
-                sem eu nibh varius gravida ut ac magna. Suspendisse massa nisi, malesuada a nisl et, iaculis auctor dolor. Fusce ultrices, mauris non placerat eleifend, nibh sapien sodales velit, sit amet viverra enim erat sed elit. Maecenas facilisis
-                dui eu ullamcorper laoreet. Maecenas pharetra sem id vehicula scelerisque.</p>
-            <p>
-                Ut a fringilla orci. Donec nec erat in leo posuere hendrerit. Cras posuere vehicula tellus, ac pharetra mauris sagittis ut. Curabitur at ante malesuada, sagittis dolor ut, laoreet erat. Curabitur eu justo eros. Aliquam ac ipsum quis nulla lacinia varius.
-                Cras tempus aliquet erat at imperdiet. Integer sagittis tincidunt commodo. Fusce lacinia blandit leo vel bibendum. Pellentesque hendrerit nibh ac nunc porta, quis tempor odio aliquet. Nulla sed iaculis sapien. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Integer sollicitudin, lacus vel lobortis luctus, elit magna lobortis turpis, id cursus magna nunc vel magna. Etiam sit amet condimentum nisl. Aenean in leo vehicula ante
-                dapibus laoreet. Nunc in massa a leo sollicitudin facilisis non non orci.</p>
-            <p>
-                Nunc lorem nisi, scelerisque quis arcu non, dapibus fermentum arcu. Cras nec facilisis neque. Fusce ultricies nunc nunc, interdum ultrices magna vestibulum in. Suspendisse sed sollicitudin urna. Etiam faucibus aliquet erat. Morbi vel nunc hendrerit arcu
-                hendrerit ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tempus luctus sapien vitae porta. Ut eget sapien ut ipsum suscipit porta. Mauris sed dui ac tellus elementum bibendum fringilla
-                id ante. Sed ut felis non lorem venenatis feugiat. Duis cursus, enim sit amet volutpat elementum, diam turpis scelerisque massa, vitae pretium neque velit id arcu. Maecenas at enim id magna gravida bibendum. Vivamus sit amet enim dolor.
-                Aenean sollicitudin massa id diam rutrum aliquam. Aenean eget tincidunt felis. Morbi condimentum arcu orci, at malesuada metus blandit quis. Praesent nec massa elit. Vivamus porttitor diam eu quam euismod mattis. Duis ut justo augue. Cras
-                tempus urna quis mauris ornare dapibus. Maecenas quis nibh malesuada, lacinia risus mattis, tempor nibh. Suspendisse convallis ut lorem ut posuere. Integer nec enim mauris. Nunc eget faucibus dolor. Nam vitae hendrerit nisi. Phasellus
-                pulvinar quam sed sapien tincidunt placerat. Maecenas id lacus eu lacus ornare tincidunt ut eu tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>
-                Fusce vel libero vitae augue molestie luctus a vel arcu. Maecenas ut quam purus. Pellentesque vestibulum interdum dui, quis imperdiet lacus scelerisque vitae. Integer luctus erat ut feugiat sodales. Cras laoreet accumsan nisi, eu tincidunt eros euismod
-                ac. Aliquam ut odio lacinia, porttitor velit eu, suscipit metus. Nullam varius sem quis enim blandit consectetur. Donec sit amet arcu est. Donec ac aliquet lectus. Duis volutpat, nunc sed iaculis imperdiet, dolor nulla sagittis nunc, vitae
-                congue neque massa at purus. Praesent at ipsum tristique, dignissim est in, lacinia libero. Maecenas sollicitudin massa lobortis facilisis commodo. Donec non est arcu.</p>
-        </article>
-        <article id="nyc">
-            <h1>Meth</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna lobortis, laoreet libero ut, vulputate risus. Aenean rhoncus, tellus nec cursus tempus, magna nisi pellentesque odio, mattis volutpat nunc mauris eget orci. Vivamus quis
-                tellus pellentesque, vulputate diam vel, facilisis risus. Nulla mi felis, euismod ac est in, ultrices tempus nisl. Ut et commodo mi. Sed rutrum porttitor est posuere ullamcorper. Aliquam dapibus nibh id viverra malesuada. Suspendisse quis
-                sem eu nibh varius gravida ut ac magna. Suspendisse massa nisi, malesuada a nisl et, iaculis auctor dolor. Fusce ultrices, mauris non placerat eleifend, nibh sapien sodales velit, sit amet viverra enim erat sed elit. Maecenas facilisis
-                dui eu ullamcorper laoreet. Maecenas pharetra sem id vehicula scelerisque.</p>
-            <p>
-                Ut a fringilla orci. Donec nec erat in leo posuere hendrerit. Cras posuere vehicula tellus, ac pharetra mauris sagittis ut. Curabitur at ante malesuada, sagittis dolor ut, laoreet erat. Curabitur eu justo eros. Aliquam ac ipsum quis nulla lacinia varius.
-                Cras tempus aliquet erat at imperdiet. Integer sagittis tincidunt commodo. Fusce lacinia blandit leo vel bibendum. Pellentesque hendrerit nibh ac nunc porta, quis tempor odio aliquet. Nulla sed iaculis sapien. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Integer sollicitudin, lacus vel lobortis luctus, elit magna lobortis turpis, id cursus magna nunc vel magna. Etiam sit amet condimentum nisl. Aenean in leo vehicula ante
-                dapibus laoreet. Nunc in massa a leo sollicitudin facilisis non non orci.</p>
-            <p>
-                Nunc lorem nisi, scelerisque quis arcu non, dapibus fermentum arcu. Cras nec facilisis neque. Fusce ultricies nunc nunc, interdum ultrices magna vestibulum in. Suspendisse sed sollicitudin urna. Etiam faucibus aliquet erat. Morbi vel nunc hendrerit arcu
-                hendrerit ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tempus luctus sapien vitae porta. Ut eget sapien ut ipsum suscipit porta. Mauris sed dui ac tellus elementum bibendum fringilla
-                id ante. Sed ut felis non lorem venenatis feugiat. Duis cursus, enim sit amet volutpat elementum, diam turpis scelerisque massa, vitae pretium neque velit id arcu. Maecenas at enim id magna gravida bibendum. Vivamus sit amet enim dolor.
-                Aenean sollicitudin massa id diam rutrum aliquam. Aenean eget tincidunt felis. Morbi condimentum arcu orci, at malesuada metus blandit quis. Praesent nec massa elit. Vivamus porttitor diam eu quam euismod mattis. Duis ut justo augue. Cras
-                tempus urna quis mauris ornare dapibus. Maecenas quis nibh malesuada, lacinia risus mattis, tempor nibh. Suspendisse convallis ut lorem ut posuere. Integer nec enim mauris. Nunc eget faucibus dolor. Nam vitae hendrerit nisi. Phasellus
-                pulvinar quam sed sapien tincidunt placerat. Maecenas id lacus eu lacus ornare tincidunt ut eu tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>
-                Fusce vel libero vitae augue molestie luctus a vel arcu. Maecenas ut quam purus. Pellentesque vestibulum interdum dui, quis imperdiet lacus scelerisque vitae. Integer luctus erat ut feugiat sodales. Cras laoreet accumsan nisi, eu tincidunt eros euismod
-                ac. Aliquam ut odio lacinia, porttitor velit eu, suscipit metus. Nullam varius sem quis enim blandit consectetur. Donec sit amet arcu est. Donec ac aliquet lectus. Duis volutpat, nunc sed iaculis imperdiet, dolor nulla sagittis nunc, vitae
-                congue neque massa at purus. Praesent at ipsum tristique, dignissim est in, lacinia libero. Maecenas sollicitudin massa lobortis facilisis commodo. Donec non est arcu.</p>
-        </article>
-        <article id="dc">
-            <h1>Crico</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna lobortis, laoreet libero ut, vulputate risus. Aenean rhoncus, tellus nec cursus tempus, magna nisi pellentesque odio, mattis volutpat nunc mauris eget orci. Vivamus quis
-                tellus pellentesque, vulputate diam vel, facilisis risus. Nulla mi felis, euismod ac est in, ultrices tempus nisl. Ut et commodo mi. Sed rutrum porttitor est posuere ullamcorper. Aliquam dapibus nibh id viverra malesuada. Suspendisse quis
-                sem eu nibh varius gravida ut ac magna. Suspendisse massa nisi, malesuada a nisl et, iaculis auctor dolor. Fusce ultrices, mauris non placerat eleifend, nibh sapien sodales velit, sit amet viverra enim erat sed elit. Maecenas facilisis
-                dui eu ullamcorper laoreet. Maecenas pharetra sem id vehicula scelerisque.</p>
-            <p>
-                Ut a fringilla orci. Donec nec erat in leo posuere hendrerit. Cras posuere vehicula tellus, ac pharetra mauris sagittis ut. Curabitur at ante malesuada, sagittis dolor ut, laoreet erat. Curabitur eu justo eros. Aliquam ac ipsum quis nulla lacinia varius.
-                Cras tempus aliquet erat at imperdiet. Integer sagittis tincidunt commodo. Fusce lacinia blandit leo vel bibendum. Pellentesque hendrerit nibh ac nunc porta, quis tempor odio aliquet. Nulla sed iaculis sapien. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Integer sollicitudin, lacus vel lobortis luctus, elit magna lobortis turpis, id cursus magna nunc vel magna. Etiam sit amet condimentum nisl. Aenean in leo vehicula ante
-                dapibus laoreet. Nunc in massa a leo sollicitudin facilisis non non orci.</p>
-            <p>
-                Nunc lorem nisi, scelerisque quis arcu non, dapibus fermentum arcu. Cras nec facilisis neque. Fusce ultricies nunc nunc, interdum ultrices magna vestibulum in. Suspendisse sed sollicitudin urna. Etiam faucibus aliquet erat. Morbi vel nunc hendrerit arcu
-                hendrerit ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tempus luctus sapien vitae porta. Ut eget sapien ut ipsum suscipit porta. Mauris sed dui ac tellus elementum bibendum fringilla
-                id ante. Sed ut felis non lorem venenatis feugiat. Duis cursus, enim sit amet volutpat elementum, diam turpis scelerisque massa, vitae pretium neque velit id arcu. Maecenas at enim id magna gravida bibendum. Vivamus sit amet enim dolor.
-                Aenean sollicitudin massa id diam rutrum aliquam. Aenean eget tincidunt felis. Morbi condimentum arcu orci, at malesuada metus blandit quis. Praesent nec massa elit. Vivamus porttitor diam eu quam euismod mattis. Duis ut justo augue. Cras
-                tempus urna quis mauris ornare dapibus. Maecenas quis nibh malesuada, lacinia risus mattis, tempor nibh. Suspendisse convallis ut lorem ut posuere. Integer nec enim mauris. Nunc eget faucibus dolor. Nam vitae hendrerit nisi. Phasellus
-                pulvinar quam sed sapien tincidunt placerat. Maecenas id lacus eu lacus ornare tincidunt ut eu tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>
-                Fusce vel libero vitae augue molestie luctus a vel arcu. Maecenas ut quam purus. Pellentesque vestibulum interdum dui, quis imperdiet lacus scelerisque vitae. Integer luctus erat ut feugiat sodales. Cras laoreet accumsan nisi, eu tincidunt eros euismod
-                ac. Aliquam ut odio lacinia, porttitor velit eu, suscipit metus. Nullam varius sem quis enim blandit consectetur. Donec sit amet arcu est. Donec ac aliquet lectus. Duis volutpat, nunc sed iaculis imperdiet, dolor nulla sagittis nunc, vitae
-                congue neque massa at purus. Praesent at ipsum tristique, dignissim est in, lacinia libero. Maecenas sollicitudin massa lobortis facilisis commodo. Donec non est arcu.</p>
-        </article>
-        <article id="philly">
-            <h1>Foco</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna lobortis, laoreet libero ut, vulputate risus. Aenean rhoncus, tellus nec cursus tempus, magna nisi pellentesque odio, mattis volutpat nunc mauris eget orci. Vivamus quis
-                tellus pellentesque, vulputate diam vel, facilisis risus. Nulla mi felis, euismod ac est in, ultrices tempus nisl. Ut et commodo mi. Sed rutrum porttitor est posuere ullamcorper. Aliquam dapibus nibh id viverra malesuada. Suspendisse quis
-                sem eu nibh varius gravida ut ac magna. Suspendisse massa nisi, malesuada a nisl et, iaculis auctor dolor. Fusce ultrices, mauris non placerat eleifend, nibh sapien sodales velit, sit amet viverra enim erat sed elit. Maecenas facilisis
-                dui eu ullamcorper laoreet. Maecenas pharetra sem id vehicula scelerisque.</p>
-            <p>
-                Ut a fringilla orci. Donec nec erat in leo posuere hendrerit. Cras posuere vehicula tellus, ac pharetra mauris sagittis ut. Curabitur at ante malesuada, sagittis dolor ut, laoreet erat. Curabitur eu justo eros. Aliquam ac ipsum quis nulla lacinia varius.
-                Cras tempus aliquet erat at imperdiet. Integer sagittis tincidunt commodo. Fusce lacinia blandit leo vel bibendum. Pellentesque hendrerit nibh ac nunc porta, quis tempor odio aliquet. Nulla sed iaculis sapien. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Integer sollicitudin, lacus vel lobortis luctus, elit magna lobortis turpis, id cursus magna nunc vel magna. Etiam sit amet condimentum nisl. Aenean in leo vehicula ante
-                dapibus laoreet. Nunc in massa a leo sollicitudin facilisis non non orci.</p>
-            <p>
-                Nunc lorem nisi, scelerisque quis arcu non, dapibus fermentum arcu. Cras nec facilisis neque. Fusce ultricies nunc nunc, interdum ultrices magna vestibulum in. Suspendisse sed sollicitudin urna. Etiam faucibus aliquet erat. Morbi vel nunc hendrerit arcu
-                hendrerit ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tempus luctus sapien vitae porta. Ut eget sapien ut ipsum suscipit porta. Mauris sed dui ac tellus elementum bibendum fringilla
-                id ante. Sed ut felis non lorem venenatis feugiat. Duis cursus, enim sit amet volutpat elementum, diam turpis scelerisque massa, vitae pretium neque velit id arcu. Maecenas at enim id magna gravida bibendum. Vivamus sit amet enim dolor.
-                Aenean sollicitudin massa id diam rutrum aliquam. Aenean eget tincidunt felis. Morbi condimentum arcu orci, at malesuada metus blandit quis. Praesent nec massa elit. Vivamus porttitor diam eu quam euismod mattis. Duis ut justo augue. Cras
-                tempus urna quis mauris ornare dapibus. Maecenas quis nibh malesuada, lacinia risus mattis, tempor nibh. Suspendisse convallis ut lorem ut posuere. Integer nec enim mauris. Nunc eget faucibus dolor. Nam vitae hendrerit nisi. Phasellus
-                pulvinar quam sed sapien tincidunt placerat. Maecenas id lacus eu lacus ornare tincidunt ut eu tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>
-                Fusce vel libero vitae augue molestie luctus a vel arcu. Maecenas ut quam purus. Pellentesque vestibulum interdum dui, quis imperdiet lacus scelerisque vitae. Integer luctus erat ut feugiat sodales. Cras laoreet accumsan nisi, eu tincidunt eros euismod
-                ac. Aliquam ut odio lacinia, porttitor velit eu, suscipit metus. Nullam varius sem quis enim blandit consectetur. Donec sit amet arcu est. Donec ac aliquet lectus. Duis volutpat, nunc sed iaculis imperdiet, dolor nulla sagittis nunc, vitae
-                congue neque massa at purus. Praesent at ipsum tristique, dignissim est in, lacinia libero. Maecenas sollicitudin massa lobortis facilisis commodo. Donec non est arcu.</p>
-        </article>
-        <article id="la">
-            <h1>Ice</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna lobortis, laoreet libero ut, vulputate risus. Aenean rhoncus, tellus nec cursus tempus, magna nisi pellentesque odio, mattis volutpat nunc mauris eget orci. Vivamus quis
-                tellus pellentesque, vulputate diam vel, facilisis risus. Nulla mi felis, euismod ac est in, ultrices tempus nisl. Ut et commodo mi. Sed rutrum porttitor est posuere ullamcorper. Aliquam dapibus nibh id viverra malesuada. Suspendisse quis
-                sem eu nibh varius gravida ut ac magna. Suspendisse massa nisi, malesuada a nisl et, iaculis auctor dolor. Fusce ultrices, mauris non placerat eleifend, nibh sapien sodales velit, sit amet viverra enim erat sed elit. Maecenas facilisis
-                dui eu ullamcorper laoreet. Maecenas pharetra sem id vehicula scelerisque.</p>
-            <p>
-                Ut a fringilla orci. Donec nec erat in leo posuere hendrerit. Cras posuere vehicula tellus, ac pharetra mauris sagittis ut. Curabitur at ante malesuada, sagittis dolor ut, laoreet erat. Curabitur eu justo eros. Aliquam ac ipsum quis nulla lacinia varius.
-                Cras tempus aliquet erat at imperdiet. Integer sagittis tincidunt commodo. Fusce lacinia blandit leo vel bibendum. Pellentesque hendrerit nibh ac nunc porta, quis tempor odio aliquet. Nulla sed iaculis sapien. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Integer sollicitudin, lacus vel lobortis luctus, elit magna lobortis turpis, id cursus magna nunc vel magna. Etiam sit amet condimentum nisl. Aenean in leo vehicula ante
-                dapibus laoreet. Nunc in massa a leo sollicitudin facilisis non non orci.</p>
-            <p>
-                Nunc lorem nisi, scelerisque quis arcu non, dapibus fermentum arcu. Cras nec facilisis neque. Fusce ultricies nunc nunc, interdum ultrices magna vestibulum in. Suspendisse sed sollicitudin urna. Etiam faucibus aliquet erat. Morbi vel nunc hendrerit arcu
-                hendrerit ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tempus luctus sapien vitae porta. Ut eget sapien ut ipsum suscipit porta. Mauris sed dui ac tellus elementum bibendum fringilla
-                id ante. Sed ut felis non lorem venenatis feugiat. Duis cursus, enim sit amet volutpat elementum, diam turpis scelerisque massa, vitae pretium neque velit id arcu. Maecenas at enim id magna gravida bibendum. Vivamus sit amet enim dolor.
-                Aenean sollicitudin massa id diam rutrum aliquam. Aenean eget tincidunt felis. Morbi condimentum arcu orci, at malesuada metus blandit quis. Praesent nec massa elit. Vivamus porttitor diam eu quam euismod mattis. Duis ut justo augue. Cras
-                tempus urna quis mauris ornare dapibus. Maecenas quis nibh malesuada, lacinia risus mattis, tempor nibh. Suspendisse convallis ut lorem ut posuere. Integer nec enim mauris. Nunc eget faucibus dolor. Nam vitae hendrerit nisi. Phasellus
-                pulvinar quam sed sapien tincidunt placerat. Maecenas id lacus eu lacus ornare tincidunt ut eu tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p>
-                Fusce vel libero vitae augue molestie luctus a vel arcu. Maecenas ut quam purus. Pellentesque vestibulum interdum dui, quis imperdiet lacus scelerisque vitae. Integer luctus erat ut feugiat sodales. Cras laoreet accumsan nisi, eu tincidunt eros euismod
-                ac. Aliquam ut odio lacinia, porttitor velit eu, suscipit metus. Nullam varius sem quis enim blandit consectetur. Donec sit amet arcu est. Donec ac aliquet lectus. Duis volutpat, nunc sed iaculis imperdiet, dolor nulla sagittis nunc, vitae
-                congue neque massa at purus. Praesent at ipsum tristique, dignissim est in, lacinia libero. Maecenas sollicitudin massa lobortis facilisis commodo. Donec non est arcu.</p>
-        </article>
+    <div class="EL-NAV   ">
+        <a href="# " class="nav__trigger " aria-label="Menu">
+            <div class="bars "></div>
+        </a>
+
+        <div class="nav--mobile ">
+            <div class="nav__center ">
+                <nav class="nav__list ">
+                    <ul>
+                        <li class="nav__item ">
+                            <a href="# ">Menú</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="nav__divider "></div>
+
+                <div class="nav__sublist ">
+                    <ul>
+                        <li class="nav__item "><a href="">¿Qué es?</a></li>
+                        <li class="nav__item "><a href="">¿Por qué hacer esto?</a></li>
+                        <li class="nav__item "><a href="">Contacto</a></li>
+                        <li class="nav__item "><a href="">Donaciones</a></li>
+                        <li class="nav__item "><a href="">El cristal según internet</li>
+                    </ul>
+
+                    <ul>
+                        <li class="nav__item ">
+                            <a href=" "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay--nav "><span></span></div>
     </div>
-    <!-- partial -->
 
-    <main class="main">
+    <div id="preloder" class=" background-icon-black-1B1C24">
 
+        <div class="  w3-center ">
 
-
-
-        <div class="spacer spacer--large spacer--grey "> </div>
-
+            <div class="container-name  ">
+                <div class="box ">
 
 
-        <div class="faq " data-component="Faq ">
-            <div class="faq__grid ">
-                <div class="faq__grid__chapter ">
-                    <div class="faq__grid__chapter__title ">
-                        Encuentra las respuestas que necesitas
+                    <div class="title w3-center ">
+                        <span class="block "></span>
+                        <h1 style=" color: #fee;
+                            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Meth<span></span></h1>
+
                     </div>
-                    <div class="faq__grid__chapter__card ">
-                        <div class="faq__grid__chapter__card__title ">
-                            ¿Necesitas más ayuda?
-                        </div>
-                        <div class="faq__grid__chapter__card__body ">
-                            Con mucho gusto platicamos, estoy para ayudarte. No estas solo.
-                        </div>
 
-
-
-                        <div class="w3-main w3-container w3-center ">
-                            <!-- The Contact Section -->
-                            <div class="w3-container w3-content ">
-
-                                <form id="formulario" class="formulario">
-                                    Nombre
-                                    <div class="box-input">
-                                        <input name="nombre" id="nombre" type="text" required>
-                                        <span data-placeholder="Nombre"></span>
-                                    </div>
-                                    Email
-                                    <div class="box-input">
-                                        <input name="email" id="email" type="email" required>
-                                        <span data-placeholder="email"></span>
-                                    </div>
-                                    Motivo de contacto
-                                    <div class="box-input">
-                                        <input name="apellidos" id="apellidos" type="text" required>
-                                        <span data-placeholder="Motivo de contacto"></span>
-                                    </div>
-                                    <br>
-                                    <button class="button w3-border w3-round-large" style="vertical-align:middle" id="submit" type="submit" onclick="alert( 'A continuación se abrira whatsapp, solo dale enviar al mensaje que tendrá los datos que acabas de llenar. Gracias') "><i class="fab fa-whatsapp"></i> <span><b>Enviar por WhatsApp</b> </span></button><br>
-                                </form>
-
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="faq__grid__chapter__card__buttons ">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="faq__grid__faqs ">
-
-                    <details class="faq__grid__faqs__faq " open>
-                        <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Cuánto tiempo dura la sesión? ">
-                            <div class="faq__grid__faqs__faq__button__content ">
-                                <div class="faq__grid__faqs__faq__button__title ">
-                                    ¿Cuánto tiempo dura la sesión?
-                                </div>
-                                <div class="faq__grid__faqs__faq__button__arrow ">
-                                    <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                  <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
-                </svg>
-                                </div>
-                            </div>
-                        </summary>
-                        <div class="faq__grid__faqs__faq__body ">
-                            De 50 a 60 minutos por sesión.
-                        </div>
-
-                    </details>
-
-                    <details class="faq__grid__faqs__faq ">
-                        <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Es virtual la sesión? ">
-                            <div class="faq__grid__faqs__faq__button__content ">
-                                <div class="faq__grid__faqs__faq__button__title ">
-                                    ¿Es virtual la sesión?
-                                </div>
-                                <div class="faq__grid__faqs__faq__button__arrow ">
-                                    <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                  <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
-                </svg>
-                                </div>
-                            </div>
-                        </summary>
-                        <div class="faq__grid__faqs__faq__body ">
-                            Si, por Zoom.
-                        </div>
-
-                    </details>
-
-                    <details class="faq__grid__faqs__faq ">
-                        <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Cuáles son los precios? ">
-                            <div class="faq__grid__faqs__faq__button__content ">
-                                <div class="faq__grid__faqs__faq__button__title ">
-                                    ¿Cuáles son los precios?
-                                </div>
-                                <div class="faq__grid__faqs__faq__button__arrow ">
-                                    <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                  <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
-                </svg>
-                                </div>
-                            </div>
-                        </summary>
-                        <div class="faq__grid__faqs__faq__body ">
-                            Una sesión por $30. Recomendamos 5. La promoción es.
-                        </div>
-
-
-                        <!--  <a class="link faq__grid__faqs__faq__cta " href="https://landing.google.com/advancedprotection/ " target="_blank " rel="noreferrer noopener "> Más información  </a> -->
-
-
-                    </details>
-
-                    <details class="faq__grid__faqs__faq ">
-                        <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="Opciones de pago ">
-                            <div class="faq__grid__faqs__faq__button__content ">
-                                <div class="faq__grid__faqs__faq__button__title ">
-                                    Opciones de pago
-                                </div>
-                                <div class="faq__grid__faqs__faq__button__arrow ">
-                                    <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
-                  <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
-                </svg>
-                                </div>
-                            </div>
-                        </summary>
-                        <div class="faq__grid__faqs__faq__body ">
-                            Deposito Banco Azteca
-                        </div>
-                        <a class="link faq__grid__faqs__faq__cta " href="# " target="_blank " rel="noreferrer noopener ">Más información</a>
-
-
-                    </details>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="loader "> </div>
+    </div>
+
+
+    <!-- partial:index.partial.html -->
+
+
+    <div class="tabs   ">
+        <input type="radio" name="tab" id="Detalles" checked>
+        <label for="Detalles">Lo que hay en internet</label>
+        <div>
+
+
+            <div><br><br><br>
+
+                <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">El diario de un cristalero</h4>
+
+                <ul id="Activity">
+                    <li hi-repeat="unosfumes" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                        <div style="display: flex; ">
+                            <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
+
+                            <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem;   margin-bottom: 0; line-height: 1.25; width: 100%;">
+                                <span>
+                                        <strong>El diario de uncristalero</strong>   <span style="color:#3f3b3b">  {{fecha-De-Publicacion}}  </span>
+                                </span>
+                                <br> {{el-Post}}
+                                <span><a rel="noreferrer noopener" href="{{a-href}}" target="_blank" title="{{a-href-tittle}}" aria-label="Link de la publicación"><code style="color: grey">{{accion}} </code></span>
+                                </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                hi.displayObject("Activity", myObject);
+            </script>
+
+            <div><br><br><br><br>
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Shop </h2>
+                <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Gracias</h4>
+                <style>
+
+                </style>
+                <div style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="clearfix "></div>
+
+
+                </div>
+
 
 
             </div>
+
+            <p>Slamming, guía para la reducción de daños asociados al uso de drogas inyectables en las sesiones de sexo</p>
+            <a href="http://gtt-vih.org/files/active/1/Guia_slamming_Segunda_Edicion_gTt_2021.pdf">Descargar guia slamming, segunda edición</a>
+            <br>
+            <p>Chemsex ¿Quieres cambiar algo en tu consumo? ¿Y en tu vida sexual?</p>
+            <a href="https://chemsex.info/slamming/">Acceder y leer más información</a>
+            <br>
+
+            <a rel="noreferrer noopener" href="Walter-White-Blue-Meth.html" target="_blank" title="Breaking Bad - Walter White Blue Meth" aria-label="Breaking Bad - Walter White Blue Meth">
+                            Breaking Bad - Walter White Blue Meth
+                        </a>
+            <br>
+            <a rel="noreferrer noopener" href="diamante-meth.html" target="_blank" title="diamante meth" aria-label="Diamante Meth">
+                            Diamante Meth
+                        </a>
+            <br>
+            <a rel="noreferrer noopener" href="este-cristal-tuyo/este-cristal-tuyo_player.html" target="_blank" title="Atlantis" aria-label="Atlantis Diamante Meth">
+                            Este diamante tuyo me hace sentir de 20 años
+                        </a>
+            <a href="#"><img src="img/Meth-The-blue-sky-brothers.vg" alt="Meth-The-blue-sky-brothers" loading="lazy lazyload " class="lazy "></a>
+
 
 
 
 
         </div>
 
-        <div class="spacer spacer--large spacer--grey "></div>
+        <input type="radio" name="tab" id="Mecanica">
+        <label for="Mecanica">
+        Twitter</label>
+        <div>
+            <p>InfodrogasVIH. Es un proyecto dirigido a la reducción de riesgos asociados al consumo de drogas y otras sustancias en personas con el VIH.</p>
+            <a href=" https://twitter.com/infodrogasvih">@infodrogasvih</a>
+            <br>
+            <main class="main">
 
 
-    </main>
 
-    <div class="scrollmenu">
-        <div><iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/2021/recuerdo/" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe></div>
-        <div><iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/peli/" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe></div>
-        <div><iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/babeando" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe></div>
-        <div><iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/enchufalo" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe></div>
-        <div><iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/magia-negra-nick-bolt" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe></div>
+
+                <div class="spacer spacer--large spacer--grey "> </div>
+
+
+
+                <div class="faq " data-component="Faq ">
+                    <div class="faq__grid ">
+                        <div class="faq__grid__chapter ">
+                            <div class="faq__grid__chapter__title ">
+                                Encuentra las respuestas que necesitas
+                            </div>
+                            <div class="faq__grid__chapter__card ">
+                                <div class="faq__grid__chapter__card__title ">
+                                    ¿Necesitas más ayuda?
+                                </div>
+                                <div class="faq__grid__chapter__card__body ">
+                                    Con mucho gusto platicamos, estoy para ayudarte. No estas solo.
+                                </div>
+
+
+
+                                <div class="w3-main w3-container w3-center ">
+                                    <!-- The Contact Section -->
+                                    <div class="w3-container w3-content ">
+
+                                        <form id="formulario" class="formulario">
+                                            Nombre
+                                            <div class="box-input">
+                                                <input name="nombre" id="nombre" type="text" required>
+                                                <span data-placeholder="Nombre"></span>
+                                            </div>
+                                            Email
+                                            <div class="box-input">
+                                                <input name="email" id="email" type="email" required>
+                                                <span data-placeholder="email"></span>
+                                            </div>
+                                            Motivo de contacto
+                                            <div class="box-input">
+                                                <input name="apellidos" id="apellidos" type="text" required>
+                                                <span data-placeholder="Motivo de contacto"></span>
+                                            </div>
+                                            <br>
+                                            <button class="button w3-border w3-round-large" style="vertical-align:middle" id="submit" type="submit" onclick="alert( 'A continuación se abrira whatsapp, solo dale enviar al mensaje que tendrá los datos que acabas de llenar. Gracias') "><i class="fab fa-whatsapp"></i> <span><b>Enviar por WhatsApp</b> </span></button><br>
+                                        </form>
+
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="faq__grid__chapter__card__buttons ">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="faq__grid__faqs ">
+
+                            <details class="faq__grid__faqs__faq " open>
+                                <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Cuánto tiempo dura la sesión? ">
+                                    <div class="faq__grid__faqs__faq__button__content ">
+                                        <div class="faq__grid__faqs__faq__button__title ">
+                                            ¿Cuánto tiempo dura la sesión?
+                                        </div>
+                                        <div class="faq__grid__faqs__faq__button__arrow ">
+                                            <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                          <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
+                        </svg>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="faq__grid__faqs__faq__body ">
+                                    De 50 a 60 minutos por sesión.
+                                </div>
+
+                            </details>
+
+                            <details class="faq__grid__faqs__faq ">
+                                <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Es virtual la sesión? ">
+                                    <div class="faq__grid__faqs__faq__button__content ">
+                                        <div class="faq__grid__faqs__faq__button__title ">
+                                            ¿Es virtual la sesión?
+                                        </div>
+                                        <div class="faq__grid__faqs__faq__button__arrow ">
+                                            <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                          <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
+                        </svg>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="faq__grid__faqs__faq__body ">
+                                    Si, por Zoom.
+                                </div>
+
+                            </details>
+
+                            <details class="faq__grid__faqs__faq ">
+                                <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="¿Cuáles son los precios? ">
+                                    <div class="faq__grid__faqs__faq__button__content ">
+                                        <div class="faq__grid__faqs__faq__button__title ">
+                                            ¿Cuáles son los precios?
+                                        </div>
+                                        <div class="faq__grid__faqs__faq__button__arrow ">
+                                            <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                          <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
+                        </svg>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="faq__grid__faqs__faq__body ">
+                                    Una sesión por $30. Recomendamos 5. La promoción es.
+                                </div>
+
+
+                                <!--  <a class="link faq__grid__faqs__faq__cta " href="https://landing.google.com/advancedprotection/ " target="_blank " rel="noreferrer noopener "> Más información  </a> -->
+
+
+                            </details>
+
+                            <details class="faq__grid__faqs__faq ">
+                                <summary class="faq__grid__faqs__faq__button " data-category="faq " data-label="Opciones de pago ">
+                                    <div class="faq__grid__faqs__faq__button__content ">
+                                        <div class="faq__grid__faqs__faq__button__title ">
+                                            Opciones de pago
+                                        </div>
+                                        <div class="faq__grid__faqs__faq__button__arrow ">
+                                            <svg width="19 " height="12 " viewBox="0 0 19 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                          <path d="M16.385 0.884766L9.5 7.75477L2.615 0.884766L0.5 2.99977L9.5 11.9998L18.5 2.99977L16.385 0.884766Z " fill="#1A73E8 "/>
+                        </svg>
+                                        </div>
+                                    </div>
+                                </summary>
+                                <div class="faq__grid__faqs__faq__body ">
+                                    Deposito Banco Azteca
+                                </div>
+                                <a class="link faq__grid__faqs__faq__cta " href="# " target="_blank " rel="noreferrer noopener ">Más información</a>
+
+
+                            </details>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="spacer spacer--large spacer--grey "></div>
+
+
+            </main>
+
+        </div>
+
+        <input type="radio" name="tab" id="FAQ-viaje">
+        <label for="FAQ-viaje">
+        FAQ
+    </label>
+
+        <div>
+            <p>
+
+            </p>
+            <br>
+
+
+            <p>
+                <ul>
+                    <li>
+                        <b>Sé amable y respetuoso con el resto de los dulceros</b> 💫 Al mínimo insulto o malas intenciones, quedarás expulsado de la comunidad. Tampoco aceptaremos burlas ni intenciones de venta.</li>
+                    <li><b>Da tu punto de vista personal a los dulceros que tengan problemas</b> 💪 Si alguien tiene dudas o anda algo perdido, ahí estaremos para tenderles la mano.</li>
+                    <li>Sed fermentum risus eu ornare pellentesque.</li>
+                    <li>Quisque quis leo nec purus hendrerit feugiat auctor nec velit.</li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>Donec elementum nisi vitae ex iaculis, fringilla pretium augue porttitor.</li>
+                    <div style="text-align:center;font-size:14px; ">Hecho con ❤️ por que esto es lo que me hubiera gustado saber antes de haber probado el cris</div>
+
+                </ul>
+            </p>
+        </div>
+
+
+        <input type="radio" name="tab" id="cris4">
+        <label for="cris4">
+        cris4
+    </label>
+
+        <div>
+
+            <div>
+                <iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/enchufalo" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                <style>
+                    /* Then style the iframe to fit in the container div with full height and width */
+                    
+                    .responsive-iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        min-height: auto;
+                    }
+                </style>
+
+            </div>
+        </div>
 
     </div>
 
+    <div class="bar-container body-bar">
+
+
+
+        <div class="button-container ">
+
+            <label for="Detalles">
+                    <i class="icon-notificaciones hi-hover-opacity bar-button one" > </i></label>
+
+
+            <label for="Mecanica">
+                    <i class="icon-viajes-one hi-hover-opacity bar-button two " > </i> </label>
+
+
+            <label for="FAQ-viaje">
+                        <i class="icon-experiencias hi-hover-opacity bar-button three " > </i>   </label>
+
+
+            <label for="cris4">
+                     <i class="icon-calendario hi-hover-opacity bar-button four" > </i></label>
+
+
+
+        </div>
+        <div class="white-bar ">
+
+        </div>
+
+
+
+    </div>
+    <!-- partial -->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(document).ready(function() {
+
+            // Function for nav bar
+            // It sets the size of the hovered link and the links around it
+            // It also moves the white-bar around.
+            $('.bar-button').hover(function() {
+                $('.bar-button').css('width', '25%');
+                $(this).css('width', '25%');
+                if ($(this).hasClass('one')) {
+                    $('.white-bar').css('left', '0%')
+                } else if ($(this).hasClass('two')) {
+                    $('.white-bar').css('left', '25%')
+                } else if ($(this).hasClass('three')) {
+                    $('.white-bar').css('left', '50%')
+                } else if ($(this).hasClass('four')) {
+                    $('.white-bar').css('left', '75%')
+                };
+            }, function() {
+                $('.white-bar').css('left', '25%');
+                $('.bar-button').css('width', '25%');
+            });
+
+        });
+    </script>
+
+    <script>
+        var mobileNav = {
+            // Variables
+            $overlayNav: $('.overlay--nav'),
+            $overlayNavChild: $('.overlay--nav').children('span'),
+            $overlayContent: $('.overlay--content'),
+            $overlayContentChild: $('.overlay--content').children('span'),
+            $navTrigger: $('.nav__trigger'),
+            $nav: $('.nav--mobile'),
+            transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+
+            init: function() {
+                var self = this;
+
+                // Init the layers
+                this.initLayers();
+                $(window).on('resize', function() {
+                    self.initLayers();
+                });
+
+                // Handle the transitions
+                this.$navTrigger.on('click', function(e) {
+                    e.preventDefault();
+
+                    if (!self.$navTrigger.hasClass('is-active')) {
+                        // .nav--trigger active
+                        self.$navTrigger.addClass('is-active');
+
+                        // .overlay--nav active
+                        self.$overlayNavChild.addClass('is-active').one(self.transitionEnd, function() {
+                            // .nav active
+                            self.$nav.addClass('is-active');
+                        });
+
+                        // no-csstransitions fallback
+                        if ($('html').hasClass('no-csstransitions')) {
+                            self.$nav.addClass('is-active');
+                        }
+                    } else {
+                        // .nav inactive
+                        self.$nav.removeClass('is-active').one(self.transitionEnd, function() {
+                            // .overlay--nav inactive
+                            self.$overlayNavChild.removeClass('is-active').off();
+
+                            // .nav--trigger inactive
+                            self.$navTrigger.removeClass('is-active');
+                        });
+
+                        // no-csstransitions fallback
+                        if ($('html').hasClass('no-csstransitions')) {
+                            self.$overlayNavChild.removeClass('is-active');
+                            self.$navTrigger.removeClass('is-active');
+                        }
+                    }
+                });
+            },
+
+            initLayers: function() {
+                var self = this;
+                var diameter = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
+
+                self.$overlayNavChild.css({
+                    scaleX: 0,
+                    scaleY: 0,
+                    translateZ: 0,
+                    height: diameter + 'px',
+                    width: diameter + 'px',
+                    top: -(diameter / 2) + 'px',
+                    left: -(diameter / 2) + 'px',
+                });
+            }
+        }
+
+        mobileNav.init();
+    </script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
     <script src="js/text.js"></script>
     <script src="js/home.js"></script>
+    <script src="preloader.js"></script>
+
 
 </body>
 
