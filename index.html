@@ -15,6 +15,8 @@
     <link rel="icon" sizes="32x32" href="/gmail_2020q4_32dp.png">
     <link rel="icon" sizes="16x16" href="/gmail_2020q4_16dp.png">
     <link rel="icon" sizes="192x192" href="favicon-slamming.png" id="favicon" type="image/x-icon" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
     <link rel="preload" as="font">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -516,8 +518,378 @@
 
     <script src="js/hi.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.cssx'>
+    <style>
+        /*!
+        * Bootstrap v3.3.7 (http://getbootstrap.com)
+        * Copyright 2011-2016 Twitter, Inc.
+        * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+        */
+        /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+        
+        html {
+            font-family: sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+        
+        body {
+            margin: 0
+        }
+        
+        button {
+            margin: 0;
+            font: inherit;
+            color: inherit
+        }
+        
+        button {
+            overflow: visible
+        }
+        
+        button {
+            text-transform: none
+        }
+        
+        button {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+        
+        button::-moz-focus-inner {
+            padding: 0;
+            border: 0
+        }
+        /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+        
+        @media print {
+            *,
+             :after,
+             :before {
+                color: #000!important;
+                text-shadow: none!important;
+                background: 0 0!important;
+                -webkit-box-shadow: none!important;
+                box-shadow: none!important
+            }
+            p {
+                orphans: 3;
+                widows: 3
+            }
+        }
+        
+        @font-face {
+            font-family: 'Glyphicons Halflings';
+            src: url(../fonts/glyphicons-halflings-regular.eot);
+            src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+        }
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+         :after,
+         :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff
+        }
+        
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+        
+        h4 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit
+        }
+        
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px
+        }
+        
+        h4 {
+            font-size: 18px
+        }
+        
+        p {
+            margin: 0 0 10px
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px
+        }
+        
+        .btn:active:focus,
+        .btn:focus {
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
+        }
+        
+        .btn:focus,
+        .btn:hover {
+            color: #333;
+            text-decoration: none
+        }
+        
+        .btn:active {
+            background-image: none;
+            outline: 0;
+            -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+        }
+        
+        .btn-default {
+            color: #333;
+            background-color: #fff;
+            border-color: #ccc
+        }
+        
+        .btn-default:focus {
+            color: #333;
+            background-color: #e6e6e6;
+            border-color: #8c8c8c
+        }
+        
+        .btn-default:hover {
+            color: #333;
+            background-color: #e6e6e6;
+            border-color: #adadad
+        }
+        
+        .btn-default:active {
+            color: #333;
+            background-color: #e6e6e6;
+            border-color: #adadad
+        }
+        
+        .btn-default:active:focus,
+        .btn-default:active:hover {
+            color: #333;
+            background-color: #d4d4d4;
+            border-color: #8c8c8c
+        }
+        
+        .btn-default:active {
+            background-image: none
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4
+        }
+        
+        .btn-primary:focus {
+            color: #fff;
+            background-color: #286090;
+            border-color: #122b40
+        }
+        
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #286090;
+            border-color: #204d74
+        }
+        
+        .btn-primary:active {
+            color: #fff;
+            background-color: #286090;
+            border-color: #204d74
+        }
+        
+        .btn-primary:active:focus,
+        .btn-primary:active:hover {
+            color: #fff;
+            background-color: #204d74;
+            border-color: #122b40
+        }
+        
+        .btn-primary:active {
+            background-image: none
+        }
+        
+        .btn-lg {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px
+        }
+        
+        .fade {
+            opacity: 0;
+            -webkit-transition: opacity .15s linear;
+            -o-transition: opacity .15s linear;
+            transition: opacity .15s linear
+        }
+        
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2
+        }
+        
+        .close:focus,
+        .close:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            filter: alpha(opacity=50);
+            opacity: .5
+        }
+        
+        button.close {
+            -webkit-appearance: none;
+            padding: 0;
+            cursor: pointer;
+            background: 0 0;
+            border: 0
+        }
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0
+        }
+        
+        .modal.fade .modal-dialog {
+            -webkit-transition: -webkit-transform .3s ease-out;
+            -o-transition: -o-transform .3s ease-out;
+            transition: transform .3s ease-out;
+            -webkit-transform: translate(0, -25%);
+            -ms-transform: translate(0, -25%);
+            -o-transform: translate(0, -25%);
+            transform: translate(0, -25%)
+        }
+        
+        .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: 10px
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            outline: 0;
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
+        }
+        
+        .modal-header {
+            padding: 15px;
+            border-bottom: 1px solid #e5e5e5
+        }
+        
+        .modal-header .close {
+            margin-top: -2px
+        }
+        
+        .modal-title {
+            margin: 0;
+            line-height: 1.42857143
+        }
+        
+        .modal-body {
+            position: relative;
+            padding: 15px
+        }
+        
+        .modal-footer {
+            padding: 15px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5
+        }
+        
+        .modal-footer .btn+.btn {
+            margin-bottom: 0;
+            margin-left: 5px
+        }
+        
+        @media (min-width:768px) {
+            .modal-dialog {
+                width: 600px;
+                margin: 30px auto
+            }
+            .modal-content {
+                -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+            }
+        }
+        
+        .modal-footer:after,
+        .modal-footer:before,
+        .modal-header:after,
+        .modal-header:before {
+            display: table;
+            content: " "
+        }
+        
+        .modal-footer:after,
+        .modal-header:after {
+            clear: both
+        }
+        
+        @-ms-viewport {
+            width: device-width
+        }
+        /*# sourceMappingURL=bootstrap.min.css.map */
+    </style>
     <style>
         @media (max-width: 767px) {
             .modal-fullscreen-xs-down {
@@ -634,7 +1006,8 @@
             }
         };
     </script>
-
+    <script src="js/one.js"></script>
+    <link rel="stylesheet" href="css/one.css">
 
 </head>
 
@@ -1070,202 +1443,403 @@
     </label>
 
         <div>
-            <p>
 
-            </p>
-            <br>
+            <ul class="gallery">
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+
+                        <h2>Martin Benton</h2>
+                        <p>Welcome to my amazing world of photos</p>
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info 
+                    
+                       <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=1044">
+                    </div>
+                    -->
 
 
-            <p>
-                <ul>
-                    <li>
-                        <b>Sé amable y respetuoso con el resto de los dulceros</b> 💫 Al mínimo insulto o malas intenciones, quedarás expulsado de la comunidad. Tampoco aceptaremos burlas ni intenciones de venta.</li>
-                    <li><b>Da tu punto de vista personal a los dulceros que tengan problemas</b> 💪 Si alguien tiene dudas o anda algo perdido, ahí estaremos para tenderles la mano.</li>
-                    <li>Sed fermentum risus eu ornare pellentesque.</li>
-                    <li>Quisque quis leo nec purus hendrerit feugiat auctor nec velit.</li>
-                </ul>
-            </p>
-            <p>
-                <ul>
-                    <li>Donec elementum nisi vitae ex iaculis, fringilla pretium augue porttitor.</li>
-                    <div style="text-align:center;font-size:14px; ">Hecho con ❤️ por que esto es lo que me hubiera gustado saber antes de haber probado el cris</div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
 
-                </ul>
-            </p>
-        </div>
+                    <div class="info">
+                        <h2>Louise J. Pautz</h2>
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=1014">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+                        <h2>Chris E. Coates</h2>
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=809">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+
+                        <h2>Jason E. Austin</h2>
+                        <p>Welcome to my amazing world of photos</p>
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=1045">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+                        <h2>Christine D. Brendle</h2>
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=735">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+                        <h2>Chris E. Coates</h2>
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=676">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+
+                    <div class="info">
+                        <h2>Russel A. Homes</h2>
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
 
 
-        <input type="radio" name="tab" id="cris4">
-        <label for="cris4">
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=599">
+                    </div>
+                </li>
+                <li>
+                    <div class="overlay"></div>
+                    <div class="info">
+                        <h2>Blanche J. Christie</h2>
+
+                        <p>Welcome to my amazing world of photos</p>
+
+                        <a href="#" class="btn">See Description</a>
+
+                        <div class="description">
+                            <p>
+                                Pork belly Carles Wes Anderson semiotics, Thundercats Truffaut iPhone chambray blog normcore direct trade Pinterest gentrify. Pinterest gentrify fanny pack Truffaut, bitters brunch hella kogi craft beer readymade. Synth whatever trust fund Marfa before
+                                they sold out, chillwave lomo. Bespoke polaroid Williamsburg, jean shorts literally Etsy Banksy Intelligentsia. Organic Brooklyn shabby chic ennui semiotics, brunch Tumblr mustache Helvetica PBR&B. Literally fanny pack
+                                scenester sartorial selfies post-ironic flexitarian tattooed, pork belly hashtag Vice fingerstache squid hella.
+                            </p>
+                        </div>
+                        <!-- /.description-->
+                    </div>
+                    <!--/.info -->
+                    <div class="bg-img">
+                        <img src="https://unsplash.it/1000/400?image=523">
+                    </div>
+                </li>
+            </ul>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src="js/one.js"></script>
+
+</body>
+<p>
+
+</p>
+<br>
+
+
+<p>
+    <ul>
+        <li>
+            <b>Sé amable y respetuoso con el resto de los dulceros</b> 💫 Al mínimo insulto o malas intenciones, quedarás expulsado de la comunidad. Tampoco aceptaremos burlas ni intenciones de venta.</li>
+        <li><b>Da tu punto de vista personal a los dulceros que tengan problemas</b> 💪 Si alguien tiene dudas o anda algo perdido, ahí estaremos para tenderles la mano.</li>
+        <li>Sed fermentum risus eu ornare pellentesque.</li>
+        <li>Quisque quis leo nec purus hendrerit feugiat auctor nec velit.</li>
+    </ul>
+</p>
+<p>
+    <ul>
+        <li>Donec elementum nisi vitae ex iaculis, fringilla pretium augue porttitor.</li>
+        <div style="text-align:center;font-size:14px; ">Hecho con ❤️ por que esto es lo que me hubiera gustado saber antes de haber probado el cris</div>
+
+    </ul>
+</p>
+</div>
+
+
+<input type="radio" name="tab" id="cris4">
+<label for="cris4">
         cris4
     </label>
 
-        <div>
+<div>
 
-            <div>
-                <iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/enchufalo" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
-                <style>
-                    /* Then style the iframe to fit in the container div with full height and width */
-                    
-                    .responsive-iframe {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        bottom: 0;
-                        right: 0;
-                        width: 100%;
-                        min-height: auto;
-                    }
-                </style>
-
-            </div>
-        </div>
+    <div>
+        <iframe class="responsive-iframe" src="https://luisemoji.github.io/blog/enchufalo" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+        <style>
+            /* Then style the iframe to fit in the container div with full height and width */
+            
+            .responsive-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                min-height: auto;
+            }
+        </style>
 
     </div>
+</div>
 
-    <div class="bar-container body-bar">
+</div>
+
+<div class="bar-container body-bar">
 
 
 
-        <div class="button-container ">
+    <div class="button-container ">
 
-            <label for="Detalles">
+        <label for="Detalles">
                     <img src="img/slam.svg" class=" hi-hover-opacity bar-button one">
                     </label>
 
 
 
-            <label for="Mecanica">
+        <label for="Mecanica">
                 <img src="img/slam.svg" class=" hi-hover-opacity bar-button one"> </label>
 
 
-            <label for="FAQ-viaje">
+        <label for="FAQ-viaje">
                 <img src="img/slam.svg" class=" hi-hover-opacity bar-button one">  </label>
 
 
-            <label for="cris4">
+        <label for="cris4">
                 <img src="img/slam.svg" class=" hi-hover-opacity bar-button one"></label>
 
 
 
-        </div>
-        <div class="white-bar ">
-
-        </div>
-
-
+    </div>
+    <div class="white-bar ">
 
     </div>
-    <!-- partial -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script>
-        $(document).ready(function() {
 
-            // Function for nav bar
-            // It sets the size of the hovered link and the links around it
-            // It also moves the white-bar around.
-            $('.bar-button').hover(function() {
-                $('.bar-button').css('width', '25%');
-                $(this).css('width', '25%');
-                if ($(this).hasClass('one')) {
-                    $('.white-bar').css('left', '0%')
-                } else if ($(this).hasClass('two')) {
-                    $('.white-bar').css('left', '25%')
-                } else if ($(this).hasClass('three')) {
-                    $('.white-bar').css('left', '50%')
-                } else if ($(this).hasClass('four')) {
-                    $('.white-bar').css('left', '75%')
-                };
-            }, function() {
-                $('.white-bar').css('left', '25%');
-                $('.bar-button').css('width', '25%');
+
+</div>
+<!-- partial -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+    $(document).ready(function() {
+
+        // Function for nav bar
+        // It sets the size of the hovered link and the links around it
+        // It also moves the white-bar around.
+        $('.bar-button').hover(function() {
+            $('.bar-button').css('width', '25%');
+            $(this).css('width', '25%');
+            if ($(this).hasClass('one')) {
+                $('.white-bar').css('left', '0%')
+            } else if ($(this).hasClass('two')) {
+                $('.white-bar').css('left', '25%')
+            } else if ($(this).hasClass('three')) {
+                $('.white-bar').css('left', '50%')
+            } else if ($(this).hasClass('four')) {
+                $('.white-bar').css('left', '75%')
+            };
+        }, function() {
+            $('.white-bar').css('left', '25%');
+            $('.bar-button').css('width', '25%');
+        });
+
+    });
+</script>
+
+<script>
+    var mobileNav = {
+        // Variables
+        $overlayNav: $('.overlay--nav'),
+        $overlayNavChild: $('.overlay--nav').children('span'),
+        $overlayContent: $('.overlay--content'),
+        $overlayContentChild: $('.overlay--content').children('span'),
+        $navTrigger: $('.nav__trigger'),
+        $nav: $('.nav--mobile'),
+        transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+
+        init: function() {
+            var self = this;
+
+            // Init the layers
+            this.initLayers();
+            $(window).on('resize', function() {
+                self.initLayers();
             });
 
-        });
-    </script>
+            // Handle the transitions
+            this.$navTrigger.on('click', function(e) {
+                e.preventDefault();
 
-    <script>
-        var mobileNav = {
-            // Variables
-            $overlayNav: $('.overlay--nav'),
-            $overlayNavChild: $('.overlay--nav').children('span'),
-            $overlayContent: $('.overlay--content'),
-            $overlayContentChild: $('.overlay--content').children('span'),
-            $navTrigger: $('.nav__trigger'),
-            $nav: $('.nav--mobile'),
-            transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+                if (!self.$navTrigger.hasClass('is-active')) {
+                    // .nav--trigger active
+                    self.$navTrigger.addClass('is-active');
 
-            init: function() {
-                var self = this;
+                    // .overlay--nav active
+                    self.$overlayNavChild.addClass('is-active').one(self.transitionEnd, function() {
+                        // .nav active
+                        self.$nav.addClass('is-active');
+                    });
 
-                // Init the layers
-                this.initLayers();
-                $(window).on('resize', function() {
-                    self.initLayers();
-                });
-
-                // Handle the transitions
-                this.$navTrigger.on('click', function(e) {
-                    e.preventDefault();
-
-                    if (!self.$navTrigger.hasClass('is-active')) {
-                        // .nav--trigger active
-                        self.$navTrigger.addClass('is-active');
-
-                        // .overlay--nav active
-                        self.$overlayNavChild.addClass('is-active').one(self.transitionEnd, function() {
-                            // .nav active
-                            self.$nav.addClass('is-active');
-                        });
-
-                        // no-csstransitions fallback
-                        if ($('html').hasClass('no-csstransitions')) {
-                            self.$nav.addClass('is-active');
-                        }
-                    } else {
-                        // .nav inactive
-                        self.$nav.removeClass('is-active').one(self.transitionEnd, function() {
-                            // .overlay--nav inactive
-                            self.$overlayNavChild.removeClass('is-active').off();
-
-                            // .nav--trigger inactive
-                            self.$navTrigger.removeClass('is-active');
-                        });
-
-                        // no-csstransitions fallback
-                        if ($('html').hasClass('no-csstransitions')) {
-                            self.$overlayNavChild.removeClass('is-active');
-                            self.$navTrigger.removeClass('is-active');
-                        }
+                    // no-csstransitions fallback
+                    if ($('html').hasClass('no-csstransitions')) {
+                        self.$nav.addClass('is-active');
                     }
-                });
-            },
+                } else {
+                    // .nav inactive
+                    self.$nav.removeClass('is-active').one(self.transitionEnd, function() {
+                        // .overlay--nav inactive
+                        self.$overlayNavChild.removeClass('is-active').off();
 
-            initLayers: function() {
-                var self = this;
-                var diameter = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
+                        // .nav--trigger inactive
+                        self.$navTrigger.removeClass('is-active');
+                    });
 
-                self.$overlayNavChild.css({
-                    scaleX: 0,
-                    scaleY: 0,
-                    translateZ: 0,
-                    height: diameter + 'px',
-                    width: diameter + 'px',
-                    top: -(diameter / 2) + 'px',
-                    left: -(diameter / 2) + 'px',
-                });
-            }
+                    // no-csstransitions fallback
+                    if ($('html').hasClass('no-csstransitions')) {
+                        self.$overlayNavChild.removeClass('is-active');
+                        self.$navTrigger.removeClass('is-active');
+                    }
+                }
+            });
+        },
+
+        initLayers: function() {
+            var self = this;
+            var diameter = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
+
+            self.$overlayNavChild.css({
+                scaleX: 0,
+                scaleY: 0,
+                translateZ: 0,
+                height: diameter + 'px',
+                width: diameter + 'px',
+                top: -(diameter / 2) + 'px',
+                left: -(diameter / 2) + 'px',
+            });
         }
+    }
 
-        mobileNav.init();
-    </script>
+    mobileNav.init();
+</script>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
-    <script src="js/text.js"></script>
-    <script src="js/home.js"></script>
-    <script src="preloader.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+<script src="js/text.js"></script>
+<script src="js/home.js"></script>
+<script src="preloader.js"></script>
 
 
 </body>
