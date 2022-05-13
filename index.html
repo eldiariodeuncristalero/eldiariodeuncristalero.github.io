@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>El diario de un cristalero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  <link rel="stylesheet" href="css/style-index.css">
-    <script src="js/script-index.js"></script> -->
+    <meta name="description" content="">
+    <meta name="keywords " content="">
+    <meta name="robots " content="max-snippet:-1, max-image-preview:large, max-video-preview:-1 ">
 
     <link rel="icon" href="favicon-slamming.png" type="image/x-icon" sizes="192x192 " />
     <link rel="apple-touch-icon" href="/images/crico-152.png">
@@ -15,1139 +16,111 @@
     <link rel="icon" sizes="32x32" href="/gmail_2020q4_32dp.png">
     <link rel="icon" sizes="16x16" href="/gmail_2020q4_16dp.png">
     <link rel="icon" sizes="192x192" href="favicon-slamming.png" id="favicon" type="image/x-icon" />
-
-
     <link rel="preload" as="font">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.cssx">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css'>
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-        * {
-            transition: 0.33s ease;
-        }
-        
-        .body-bar {
-            font-family: "Raleway";
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 300;
-            letter-spacing: 4px;
-        }
-        
-        .abs-center {
-            position: absolute;
-            width: 65%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        
-        .bar-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 45px;
-            overflow: hidden;
-            font-family: "Raleway";
-            font-size: 14px;
-            line-height: 18px;
-            font-weight: 200;
-            letter-spacing: 3px;
-        }
-        
-        .button-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 45px;
-        }
-        
-        .bar-button {
-            position: relative;
-            float: left;
-            height: 100%;
-            width: 25%;
-            box-sizing: border-box;
-            color: rgb(255, 255, 255);
-            background-color: rgb(0, 0, 0);
-            font-size: 26px;
-            line-height: 45px;
-            text-align: center;
-            transition: 0.33s ease;
-            text-decoration: none;
-            border-right: 1px solid rgb(0, 0, 0);
-            text-transform: uppercase;
-        }
-        
-        .bar-button:last-child {
-            border-right: none;
-        }
-        
-        .bar-button:hover {
-            background-color: rgb(12, 12, 12);
-            color: #fff;
-        }
-        
-        .white-bar {
-            position: absolute;
-            bottom: 0;
-            width: 25%;
-            height: 3px;
-            left: -25%;
-            background-color: #fff;
-        }
-    </style>
-    <style>
-        .tabs {
-            position: relative;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .tabs>label {
-            order: 1;
-            display: inline-block;
-            line-height: 50px;
-            margin: 0;
-            padding: 0 20px 0 20px;
-            font-weight: bold;
-        }
-        
-        .tabs>input[type="radio"] {
-            display: none;
-        }
-        
-        .tabs>input[type="radio"]:checked+label {}
-        
-        .tabs>input[type="radio"]:checked+label+div {
-            display: block;
-        }
-        
-        .tabs>div {
-            order: 3;
-            display: none;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 15px;
-            height: 100%;
-        }
-    </style>
-
-
-
-    <link rel="stylesheet" href="css/text.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Display|Google+Sans:400,500|Google+Sans+Text:400,500&amp;display=swap" nonce="uBU2WOdeBEmjrN3ipZG-8g">
     <link rel="stylesheet " href="css/tabset.css">
     <link rel="stylesheet " href="css/ctas.css">
-    <link rel="stylesheet " href="css/faq.css ">
-
-
-    <meta name="description" content="">
-    <meta name="keywords " content="">
-    <meta name="robots " content="max-snippet:-1, max-image-preview:large, max-video-preview:-1 ">
-    <style>
-        .button {
-            font-family: "Google Sans", "Roboto", Arial, sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: .1px;
-            line-height: 24px;
-            align-items: center;
-            appearance: none;
-            -webkit-appearance: none;
-            background-color: #1a73e8;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-            display: inline-flex;
-            justify-content: center;
-            padding: 12px 24px 11px;
-            text-decoration: none;
-            text-rendering: optimizeLegibility;
-            transition: background-color .2s, box-shadow .2s, color .2s
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .button {
-                padding-top: 10px;
-                padding-bottom: 10px
-            }
-        }
-        
-        @media(max-width: 350px) {
-            .button {
-                padding: 10px 16px
-            }
-        }
-        
-        .button:visited {
-            color: #fff
-        }
-        
-        .button:hover:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link):not(.button--badge) {
-            background-color: #174ea6;
-            box-shadow: none;
-            color: #fff
-        }
-        
-        .button:active:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link):not(.button--badge) {
-            background-color: #174ea6;
-            box-shadow: none
-        }
-        
-        .button:focus:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link):not(.button--badge) {
-            background-color: #174ea6;
-            box-shadow: none
-        }
-        
-        .button--medium {
-            background-color: #fff;
-            border-color: #dadce0;
-            color: #1a73e8
-        }
-        
-        .button--medium:visited {
-            color: #1a73e8
-        }
-        
-        .button--medium:hover {
-            box-shadow: none;
-            background-color: #f1f3f4;
-            border-color: #8ab4f8;
-            color: #174ea6
-        }
-        
-        .button--medium:active {
-            background-color: #e8f0fe;
-            box-shadow: 0 0 0 1px #1a73e8;
-            border-color: #1a73e8
-        }
-        
-        .button--medium:focus {
-            background-color: #f1f3f4;
-            box-shadow: 0 0 0 1px #1a73e8;
-            color: #174ea6
-        }
-        
-         :root {
-            --breakpoint-tablet: 600px;
-            --breakpoint-laptop: 1024px;
-            --breakpoint-desktop: 1440px
-        }
-        
-        html,
-        body {
-            font-family: "Google Sans Text", "Roboto", Arial, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #3c4043;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale
-        }
-        
-        @media(min-width: 1024px) {
-            html,
-            body {
-                font-family: "Google Sans", "Roboto", Arial, sans-serif;
-                font-size: 18px;
-                line-height: 28px
-            }
-        }
-        
-        html *,
-        body * {
-            box-sizing: border-box
-        }
-        
-        a {
-            color: #4285f4;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color .3s ease
-        }
-        
-        a:hover {
-            color: #185abc
-        }
-        
-        .main {
-            position: relative
-        }
-        
-        @media print {
-            body {
-                max-width: 100% !important;
-                zoom: 90%
-            }
-            @page {
-                size: portrait
-            }
-        }
-        
-        .HEADER {}
-        
-        .header {
-            background: #fff;
-            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 4
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header {
-                height: 56px
-            }
-        }
-        
-        @media(min-width: 600px)and (max-width: calc(1024px - 1px)) {
-            .header {
-                height: 63px
-            }
-        }
-        
-        .header__container {
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            height: 60px;
-            justify-content: space-between
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__container {
-                padding: 0 24px;
-                max-width: 600px
-            }
-        }
-        
-        @media(min-width: 600px)and (max-width: calc(1024px - 1px)) {
-            .header__container {
-                padding: 0 min(5vw, 72px);
-                max-width: 600px
-            }
-        }
-        
-        @media(min-width: 1024px)and (max-width: calc(1440px - 1px)) {
-            .header__container {
-                padding: 0 min(5vw, 72px)
-            }
-        }
-        
-        @media(min-width: 1440px) {
-            .header__container {
-                max-width: 1600px
-            }
-        }
-        
-        @media(max-width: calc(1024px - 1px)) {
-            .header__container {
-                max-width: 100%
-            }
-        }
-        
-        @media(min-width: 1440px) {
-            .header__container {
-                padding: 0 min(5vw, 72px)
-            }
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__container {
-                flex-wrap: nowrap;
-                height: 100%
-            }
-        }
-        
-        .header__logo {
-            display: flex;
-            align-items: center;
-            color: #202124;
-            font-family: "Google Sans", "Roboto", Arial, sans-serif;
-            font-weight: 500;
-            font-weight: 400;
-            color: #5f6368
-        }
-        
-        @media(max-width: calc(1024px - 1px)) {
-            .header__logo {
-                font-size: 18px;
-                line-height: 26px
-            }
-        }
-        
-        @media(min-width: 1024px) {
-            .header__logo {
-                font-size: 22px;
-                line-height: 28px
-            }
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__logo {
-                font-size: 22px;
-                line-height: 1;
-                height: 28px
-            }
-        }
-        
-        .header__logo:visited,
-        .header__logo:focus {
-            color: #5f6368
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__logo .mobile-before-hero-only {
-                position: absolute;
-                width: 0;
-                opacity: .001
-            }
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header:not(.header--scrolled-past-hero) .header__logo .mobile-before-hero-only {
-                position: static;
-                width: max-content;
-                opacity: 1;
-                transition: opacity .2s .2s
-            }
-        }
-        
-        .header__aside {
-            display: flex;
-            align-items: center;
-            z-index: 1
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__aside {
-                display: block;
-                height: 100%;
-                flex: 1
-            }
-        }
-        
-        .header__aside__buttons {
-            display: flex
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header__aside__buttons {
-                position: relative;
-                align-items: center;
-                justify-content: flex-end;
-                height: 100%;
-                padding: 9px 0
-            }
-        }
-        
-        @media(min-width: 600px) {
-            .header__aside__buttons {
-                column-gap: 16px;
-                margin-left: 30px
-            }
-        }
-        
-        @media(max-width: calc(600px - 1px)) {
-            .header:not(.header--scrolled-past-hero) .header__aside__buttons .button--mobile-before-hero-only {
-                transition: opacity .2s .2s
-            }
-        }
-        
-        .main {
-            margin-top: 60px
-        }
-        
-        @media(min-width: 1024px) {
-            .main {
-                margin-top: 60px
-            }
-        }
-        
-        .spacer--large {
-            height: 48px
-        }
-        
-        @media(min-width: 1024px) {
-            .spacer--large {
-                height: 100px
-            }
-        }
-        
-        .spacer--grey {
-            background: #f8f9fa
-        }
-        
-        ;
-    </style>
-    <style>
-        div.scrollmenu {
-            overflow: auto;
-            white-space: nowrap;
-        }
-        
-        div.scrollmenu div {
-            display: inline-block;
-            padding: 14px;
-        }
-    </style>
-
+    <link rel="stylesheet " href="css/index-style.css">
     <script src="js/hi.js"></script>
     <script src="js/entradas.js"></script>
-    <script src="js/lazysizes.min.js" async></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/hi-style.css">
-    <link rel='prefetch' href="lib/fonts/eldiariodeuncristalero.eot">
-    <link rel="preload" href="lib/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="lib/style.css"></noscript>
-    <link data-no-async=”1″ rel="stylesheet" href="lib/style.css" media="all">
-
-    <script src="js/hi.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.cssx'>
-    <style>
-        /*!
-        * Bootstrap v3.3.7 (http://getbootstrap.com)
-        * Copyright 2011-2016 Twitter, Inc.
-        * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-        */
-        /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-        
-        html {
-            font-family: sans-serif;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%
-        }
-        
-        body {
-            margin: 0
-        }
-        
-        button {
-            margin: 0;
-            font: inherit;
-            color: inherit
-        }
-        
-        button {
-            overflow: visible
-        }
-        
-        button {
-            text-transform: none
-        }
-        
-        button {
-            -webkit-appearance: button;
-            cursor: pointer
-        }
-        
-        button::-moz-focus-inner {
-            padding: 0;
-            border: 0
-        }
-        /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-        
-        @media print {
-            *,
-             :after,
-             :before {
-                color: #000!important;
-                text-shadow: none!important;
-                background: 0 0!important;
-                -webkit-box-shadow: none!important;
-                box-shadow: none!important
-            }
-            p {
-                orphans: 3;
-                widows: 3
-            }
-        }
-        
-        @font-face {
-            font-family: 'Glyphicons Halflings';
-            src: url(../fonts/glyphicons-halflings-regular.eot);
-            src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
-        }
-        
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box
-        }
-        
-         :after,
-         :before {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box
-        }
-        
-        html {
-            font-size: 10px;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-        }
-        
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.42857143;
-            color: #333;
-            background-color: #fff
-        }
-        
-        button {
-            font-family: inherit;
-            font-size: inherit;
-            line-height: inherit
-        }
-        
-        h4 {
-            font-family: inherit;
-            font-weight: 500;
-            line-height: 1.1;
-            color: inherit
-        }
-        
-        h4 {
-            margin-top: 10px;
-            margin-bottom: 10px
-        }
-        
-        h4 {
-            font-size: 18px
-        }
-        
-        p {
-            margin: 0 0 10px
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 6px 12px;
-            margin-bottom: 0;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.42857143;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            -ms-touch-action: manipulation;
-            touch-action: manipulation;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background-image: none;
-            border: 1px solid transparent;
-            border-radius: 4px
-        }
-        
-        .btn:active:focus,
-        .btn:focus {
-            outline: 5px auto -webkit-focus-ring-color;
-            outline-offset: -2px
-        }
-        
-        .btn:focus,
-        .btn:hover {
-            color: #333;
-            text-decoration: none
-        }
-        
-        .btn:active {
-            background-image: none;
-            outline: 0;
-            -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-            box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
-        }
-        
-        .btn-default {
-            color: #333;
-            background-color: #fff;
-            border-color: #ccc
-        }
-        
-        .btn-default:focus {
-            color: #333;
-            background-color: #e6e6e6;
-            border-color: #8c8c8c
-        }
-        
-        .btn-default:hover {
-            color: #333;
-            background-color: #e6e6e6;
-            border-color: #adadad
-        }
-        
-        .btn-default:active {
-            color: #333;
-            background-color: #e6e6e6;
-            border-color: #adadad
-        }
-        
-        .btn-default:active:focus,
-        .btn-default:active:hover {
-            color: #333;
-            background-color: #d4d4d4;
-            border-color: #8c8c8c
-        }
-        
-        .btn-default:active {
-            background-image: none
-        }
-        
-        .btn-primary {
-            color: #fff;
-            background-color: #337ab7;
-            border-color: #2e6da4
-        }
-        
-        .btn-primary:focus {
-            color: #fff;
-            background-color: #286090;
-            border-color: #122b40
-        }
-        
-        .btn-primary:hover {
-            color: #fff;
-            background-color: #286090;
-            border-color: #204d74
-        }
-        
-        .btn-primary:active {
-            color: #fff;
-            background-color: #286090;
-            border-color: #204d74
-        }
-        
-        .btn-primary:active:focus,
-        .btn-primary:active:hover {
-            color: #fff;
-            background-color: #204d74;
-            border-color: #122b40
-        }
-        
-        .btn-primary:active {
-            background-image: none
-        }
-        
-        .btn-lg {
-            padding: 10px 16px;
-            font-size: 18px;
-            line-height: 1.3333333;
-            border-radius: 6px
-        }
-        
-        .fade {
-            opacity: 0;
-            -webkit-transition: opacity .15s linear;
-            -o-transition: opacity .15s linear;
-            transition: opacity .15s linear
-        }
-        
-        .close {
-            float: right;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 1;
-            color: #000;
-            text-shadow: 0 1px 0 #fff;
-            filter: alpha(opacity=20);
-            opacity: .2
-        }
-        
-        .close:focus,
-        .close:hover {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-            filter: alpha(opacity=50);
-            opacity: .5
-        }
-        
-        button.close {
-            -webkit-appearance: none;
-            padding: 0;
-            cursor: pointer;
-            background: 0 0;
-            border: 0
-        }
-        
-        .modal {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1050;
-            display: none;
-            overflow: hidden;
-            -webkit-overflow-scrolling: touch;
-            outline: 0
-        }
-        
-        .modal.fade .modal-dialog {
-            -webkit-transition: -webkit-transform .3s ease-out;
-            -o-transition: -o-transform .3s ease-out;
-            transition: transform .3s ease-out;
-            -webkit-transform: translate(0, -25%);
-            -ms-transform: translate(0, -25%);
-            -o-transform: translate(0, -25%);
-            transform: translate(0, -25%)
-        }
-        
-        .modal-dialog {
-            position: relative;
-            width: auto;
-            margin: 10px
-        }
-        
-        .modal-content {
-            position: relative;
-            background-color: #fff;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-            border: 1px solid #999;
-            border: 1px solid rgba(0, 0, 0, .2);
-            border-radius: 6px;
-            outline: 0;
-            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-            box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
-        }
-        
-        .modal-header {
-            padding: 15px;
-            border-bottom: 1px solid #e5e5e5
-        }
-        
-        .modal-header .close {
-            margin-top: -2px
-        }
-        
-        .modal-title {
-            margin: 0;
-            line-height: 1.42857143
-        }
-        
-        .modal-body {
-            position: relative;
-            padding: 15px
-        }
-        
-        .modal-footer {
-            padding: 15px;
-            text-align: right;
-            border-top: 1px solid #e5e5e5
-        }
-        
-        .modal-footer .btn+.btn {
-            margin-bottom: 0;
-            margin-left: 5px
-        }
-        
-        @media (min-width:768px) {
-            .modal-dialog {
-                width: 600px;
-                margin: 30px auto
-            }
-            .modal-content {
-                -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
-            }
-        }
-        
-        .modal-footer:after,
-        .modal-footer:before,
-        .modal-header:after,
-        .modal-header:before {
-            display: table;
-            content: " "
-        }
-        
-        .modal-footer:after,
-        .modal-header:after {
-            clear: both
-        }
-        
-        @-ms-viewport {
-            width: device-width
-        }
-        /*# sourceMappingURL=bootstrap.min.css.map */
-    </style>
-    <style>
-        @media (max-width: 767px) {
-            .modal-fullscreen-xs-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-xs-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-xs-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 991px) {
-            .modal-fullscreen-sm-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-sm-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-sm-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        @media (max-width: 1199px) {
-            .modal-fullscreen-md-down {
-                padding: 0 !important;
-            }
-            .modal-fullscreen-md-down .modal-dialog {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .modal-fullscreen-md-down .modal-content {
-                height: auto;
-                min-height: 100%;
-                border: 0 none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-        
-        .modal-fullscreen {
-            padding: 0 !important;
-        }
-        
-        .modal-fullscreen .modal-dialog {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .modal-fullscreen .modal-content {
-            height: auto;
-            min-height: 100%;
-            border: 0 none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        
-        .btn-open-modal {
-            margin-bottom: 0.5em;
-        }
-    </style>
-
-
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
-    </script>
-    <script src="js/one.js"></script>
-    <link rel="stylesheet" href="css/one.css">
 
 </head>
 
 <body>
-    <div class="tabs   ">
-        <!-- Modal Fullscreen -->
-        <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
-</button>
-                        <h4 class="modal-title" id="myModalLabel3">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                        <iframe class="responsive-iframe" src="guia.html" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
-                    </div>
-                    <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div>
-                </div>
-            </div>
-        </div>
+    <div id="preloder">
+        <div class="loader "> <iframe class="responsive-iframe" src="diamante-meth.html" name="iframe_a " height="750px " width="auto " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe> </div>
     </div>
-    <!-- partial -->
-    <!-- partial -->
-    <!-- partial:index.partial.html -->
-    <!-- Buttons <button class="btn btn-primary btn-lg btn-open-modal" data-toggle="modal" data-target="#modal-fullscreen2">Fullscreen  </button>-->
-    <!-- Modal Fullscreen -->
-    <div class="modal fade modal-fullscreen" id="modal-fullscreen2" tabindex="-1" role="dialog" aria-labelledby="my" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
-        </button>
-                    <h4 class="modal-title" id="my">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    <iframe class="responsive-iframe" src="guia.html" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
-                </div>
-                <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div>
-            </div>
-        </div>
-    </div>
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-    <div class="EL-NAV   ">
-        <a href="# " class="nav__trigger " aria-label="Menu">
-            <div class="bars "></div>
-        </a>
-
-        <div class="nav--mobile ">
-            <div class="nav__center ">
-                <nav class="nav__list ">
-                    <ul>
-                        <li class="nav__item ">
-                            <p>El diario de un cristalero</p>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="nav__divider "></div>
-
-                <div class="nav__sublist ">
-                    <ul>
-                        <li class="nav__item "><a href="guia.html">Guía para hacer un buen slam</a></li>
-                    </ul>
-
-                    <ul>
-                        <li class="nav__item ">
-                            <a href=" "></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="overlay--nav "><span></span></div>
-    </div>
-
-    <div id="preloder" class=" background-icon-black-1B1C24">
-
-        <div class="  w3-center ">
-
-            <div class="container-name  ">
-                <div class="box ">
-
-
-                    <div class="title w3-center ">
-                        <span class="block "></span>
-                        <h1 style=" color: #fee;
-                            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Meth<span></span></h1>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="loader "> </div>
-    </div>
-
-
-    <!-- partial:index.partial.html -->
-
 
     <div class="tabs   ">
         <input type="radio" name="tab" id="Detalles" checked>
-        <label for="Detalles">Lo que hay en internet</label>
+        <label for="Detalles"></label>
         <div>
 
-
-            <div><br><br><br>
-
-                <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">El diario de un cristalero</h4>
-
-                <ul id="Activity">
-                    <li hi-repeat="unosfumes" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
-                        <div style="display: flex; ">
-                            <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
-
-                            <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem;   margin-bottom: 0; line-height: 1.25; width: 100%;">
-                                <span>
-                                        <strong>{{strong}}</strong>   <span style="color:#3f3b3b">  {{fecha-De-Publicacion}}  </span>
-                                </span>
-                                <br> {{el-Post}}
-                                <span><a rel="noreferrer noopener" href="{{a-href}}" target="_blank" title="{{a-href-tittle}}" aria-label="Link de la publicación"><code style="color: grey">{{accion}} </code></span>
-                                </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <script>
-                hi.displayObject("Activity", myObject);
-            </script>
-
             <div>
+                <div style="max-width: 1000px;margin: 0 auto; padding: 50px;">
 
+                    <ul class="gallery">
+                        <li>
+                            <div class="overlay"></div>
+
+                            <div class="info">
+
+                                <h2>InfodrogasVIH.</h2>
+                                <p>Es un proyecto dirigido a la reducción de riesgos asociados al consumo de drogas y otras sustancias en personas con el VIH.</p>
+                                <p class="btn">Seguirlos en Twitter</p>
+
+                                <div class="description">
+                                    <a href=" https://twitter.com/infodrogasvih">@infodrogasvih</a>
+                                </div>
+                                <!-- /.description-->
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="overlay"></div>
+
+                            <div class="info">
+                                <h2>Chemsex</h2>
+                                <p>¿Quieres cambiar algo en tu consumo? ¿Y en tu vida sexual?</p>
+
+                                <p class="btn">Conoce lo que dicen </p>
+
+                                <div class="description">
+                                    <a href="https://chemsex.info/slamming/">Acceder y leer más información</a>
+                                </div>
+                                <!-- /.description-->
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+
+                            <div class="info">
+                                <h2>Hagamos el cambio</h2>
+                                <p>Sé amable y respetuoso con el resto de los dulceros</p>
+
+                                <p class="btn">Conocer normas</p>
+
+                                <div class="description">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                💫 Al mínimo insulto o malas intenciones, quedarás expulsado de la comunidad. Tampoco aceptaremos burlas ni intenciones de venta.
+                                            </li>
+                                            <li>
+                                                <b>Da tu punto de vista personal a los dulceros que tengan problemas</b> 💪 Si alguien tiene dudas o anda algo perdido, ahí estaremos para tenderles la mano.
+                                            </li>
+                                        </ul>
+                                    </p>
+
+                                </div>
+                                <!-- /.description-->
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="overlay"></div>
+
+                            <div class="info">
+                                <h2> Este diamante tuyo me hace sentir de 20 años</h2>
+                                <p>Escena de la pelicula Atlantis de Disney</p>
+
+                                <p class="btn">Ver video</p>
+
+                                <div class="description">
+                                    <a rel="noreferrer noopener" href="este-cristal-tuyo/este-cristal-tuyo_player.html" target="_blank" title="Atlantis" aria-label="Atlantis Diamante Meth">Ver video</a>
+                                </div>
+                                <!-- /.description-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src="js/one.js"></script>
+
 
 
         </div>
@@ -1155,395 +128,216 @@
 
 
         <input type="radio" name="tab" id="FAQ-viaje">
-        <label for="FAQ-viaje"> FAQ  </label>
+        <label for="FAQ-viaje">  </label>
+        <div>
+            <div style="max-width: 1000px;margin: 0 auto;padding: 50px;">
+
+                <div><br><br><br>
+
+                    <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">El diario de un cristalero</h4>
+
+                    <ul id="Activity">
+                        <li hi-repeat="unosfumes" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                            <div style="display: flex; ">
+                                <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
+
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem;   margin-bottom: 0; line-height: 1.25; width: 100%;">
+                                    <span>
+                                            <strong>{{strong}}</strong>   <span style="color:#3f3b3b">  {{fecha-De-Publicacion}}  </span>
+                                    </span>
+                                    <br> {{el-Post}}
+                                    <span><a rel="noreferrer noopener" href="{{a-href}}" target="_blank" title="{{a-href-tittle}}" aria-label="Link de la publicación"><code style="color: grey">{{accion}} </code></span>
+                                    </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    hi.displayObject("Activity", myObject);
+                </script>
+            </div>
+
+        </div>
+
+
+        <input type="radio" name="tab" id="cris4">
+        <label for="cris4">     </label>
 
         <div>
-            <ul class="gallery">
-                <li>
-                    <div class="overlay"></div>
-
-                    <div class="info">
-
-                        <h2>InfodrogasVIH.</h2>
-                        <p>Es un proyecto dirigido a la reducción de riesgos asociados al consumo de drogas y otras sustancias en personas con el VIH.</p>
-                        <p class="btn">VSeguirlos en Twitter</p>
-
-                        <div class="description">
-                            <p>
-                                <p> Es un proyecto dirigido a la reducción de riesgos asociados al consumo de drogas y otras sustancias en personas con el VIH.</p>
-                                <a href=" https://twitter.com/infodrogasvih">@infodrogasvih</a>
-                                <br>
-                            </p>
+            <div style="max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;">
+                <div style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
                         </div>
-                        <!-- /.description-->
-                    </div>
-                </li>
-
-                <li>
-                    <div class="overlay"></div>
-
-                    <div class="info">
-                        <h2>Chemsex</h2>
-                        <p>¿Quieres cambiar algo en tu consumo? ¿Y en tu vida sexual?</p>
-
-                        <a href="#" class="btn">Conocelo que dicen </a>
-
-                        <br>
-                        <div class="description">
-                            <a href="https://chemsex.info/slamming/">Acceder y leer más información</a>
-                        </div>
-                        <!-- /.description-->
                     </div>
 
-                </li>
-                <li>
-                    <div class="overlay"></div>
-
-                    <div class="info">
-                        <h2>Diferencias</h2>
-                        <p>Welcome to my amazing world of photos</p>
-
-                        <a href="#" class="btn">See Description</a>
-
-                        <div class="description">
-                            <p>
-                                <ul>
-                                    <li>
-                                        <b>Sé amable y respetuoso con el resto de los dulceros</b> 💫 Al mínimo insulto o malas intenciones, quedarás expulsado de la comunidad. Tampoco aceptaremos burlas ni intenciones de venta.</li>
-                                    <li><b>Da tu punto de vista personal a los dulceros que tengan problemas</b> 💪 Si alguien tiene dudas o anda algo perdido, ahí estaremos para tenderles la mano.</li>
-                                    <li>Sed fermentum risus eu ornare pellentesque.</li>
-                                    <li>Quisque quis leo nec purus hendrerit feugiat auctor nec velit.</li>
-                                </ul>
-                            </p>
-                            <p>
-                                <ul>
-                                    <li>Donec elementum nisi vitae ex iaculis, fringilla pretium augue porttitor.</li>
-                                    <div style="text-align:center;font-size:14px; ">Hecho con ❤️ por que esto es lo que me hubiera gustado saber antes de haber probado el cris</div>
-
-                                </ul>
-                            </p>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
                         </div>
-                        <!-- /.description-->
                     </div>
 
-                </li>
-                <li>
-                    <div class="overlay"></div>
-
-                    <div class="info">
-                        <h2> Este diamante tuyo me hace sentir de 20 años</h2>
-                        <p>Welcome to my amazing world of photos</p>
-
-                        <a href="#" class="btn">See Description</a>
-
-
-                        <div class="description">
-                            <a rel="noreferrer noopener" href="este-cristal-tuyo/este-cristal-tuyo_player.html" target="_blank" title="Atlantis" aria-label="Atlantis Diamante Meth">
-                                Este diamante tuyo me hace sentir de 20 años
-                            </a>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
                         </div>
-                        <!-- /.description-->
                     </div>
 
-                </li>
-                <li>
-                    <div class="overlay"></div>
-                    <div class="info">
-                        <h2>Blanche J. Christie</h2>
-
-                        <p>Welcome to my amazing world of photos</p>
-
-                        <a href="#" class="btn">See Description</a>
-
-                        <div class="description">
-                            <!-- partial:index.partial.html -->
-                            <!-- Buttons --><button class="btn btn-primary btn-lg btn-open-modal" data-toggle="modal" data-target="#modal-fullscreen">Fullscreen modal </button>
-
-
-                            <button class="btn btn-primary btn-lg btn-open-modal" data-toggle="modal" data-target="#modal-fullscreen2">Galeria </button>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
                         </div>
-                        <!-- /.description-->
                     </div>
-                    <!--/.info -->
-
-                </li>
-            </ul>
-        </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="js/one.js"></script>
-
-</body>
 
 
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
 
 
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
 
-<input type="radio" name="tab" id="cris4">
-<label for="cris4">
-       Galeria
-    </label>
 
-<div>
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
 
-    <div style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="responsiveg ">
+                        <div class="gallery ">
+                            <img src="img/photo-preview-600x400.png " alt="600x400 " width="600 " height="400 ">
+                        </div>
+                    </div>
+
+                    <div class="clearfix "></div>
+                    <br><br>
+                    <div style="text-align:center;font-size:14px; ">Hecho con ❤️ por que esto es lo que me hubiera gustado saber antes de haber probado el cris</div>
+
+                </div>
             </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img class="img" src="img/photo-preview-600x400.png" alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
-            </div>
-        </div>
-
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img src="img/photo-preview-600x400.png " alt="600x400  " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img src="img/photo-preview-600x400.png" alt="600x400  " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="responsiveg ">
-            <div class="gallery ">
-                <img src="img/photo-preview-600x400.png " alt="600x400 " width="600 " height="400 ">
-            </div>
-        </div>
-
-        <div class="clearfix "></div>
-
-
-    </div>
-
-
-    <!--  <iframe class="responsive-iframe" src="https://luisemoji.github.io" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe> -->
-    <style>
-        /* Then style the iframe to fit in the container div with full height and width */
-        
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            min-height: auto;
-        }
-    </style>
-
-
-</div>
-
-</div>
-
-<div class="bar-containerX body-barX">
 
 
 
-    <div class="button-containerX ">
-
-        <label for="Detalles">
-                    <img src="img/slam.svg" class=" hi-hover-opacity bar-buttonX oneX" width="100px" height="100px">
-                    </label>
-
-
-        <label for="FAQ-viaje">
-                <img src="img/slam.svg" class=" hi-hover-opacity bar-buttonX oneX" width="100px" height="100px">  </label>
-
-
-        <label for="cris4">
-                <img src="img/slam.svg" class=" hi-hover-opacity bar-buttonX oneX"width="100px" height="100px"></label>
-
-
-
-    </div>
-    <div class="white-bar ">
-
-    </div>
-
-
-
-</div>
-<!-- partial -->
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>
-    $(document).ready(function() {
-
-        // Function for nav bar
-        // It sets the size of the hovered link and the links around it
-        // It also moves the white-bar around.
-        $('.bar-button').hover(function() {
-            $('.bar-button').css('width', '25%');
-            $(this).css('width', '25%');
-            if ($(this).hasClass('one')) {
-                $('.white-bar').css('left', '0%')
-            } else if ($(this).hasClass('two')) {
-                $('.white-bar').css('left', '25%')
-            } else if ($(this).hasClass('three')) {
-                $('.white-bar').css('left', '50%')
-            } else if ($(this).hasClass('four')) {
-                $('.white-bar').css('left', '75%')
-            };
-        }, function() {
-            $('.white-bar').css('left', '25%');
-            $('.bar-button').css('width', '25%');
-        });
-
-    });
-</script>
-
-<script>
-    var mobileNav = {
-        // Variables
-        $overlayNav: $('.overlay--nav'),
-        $overlayNavChild: $('.overlay--nav').children('span'),
-        $overlayContent: $('.overlay--content'),
-        $overlayContentChild: $('.overlay--content').children('span'),
-        $navTrigger: $('.nav__trigger'),
-        $nav: $('.nav--mobile'),
-        transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-
-        init: function() {
-            var self = this;
-
-            // Init the layers
-            this.initLayers();
-            $(window).on('resize', function() {
-                self.initLayers();
-            });
-
-            // Handle the transitions
-            this.$navTrigger.on('click', function(e) {
-                e.preventDefault();
-
-                if (!self.$navTrigger.hasClass('is-active')) {
-                    // .nav--trigger active
-                    self.$navTrigger.addClass('is-active');
-
-                    // .overlay--nav active
-                    self.$overlayNavChild.addClass('is-active').one(self.transitionEnd, function() {
-                        // .nav active
-                        self.$nav.addClass('is-active');
-                    });
-
-                    // no-csstransitions fallback
-                    if ($('html').hasClass('no-csstransitions')) {
-                        self.$nav.addClass('is-active');
-                    }
-                } else {
-                    // .nav inactive
-                    self.$nav.removeClass('is-active').one(self.transitionEnd, function() {
-                        // .overlay--nav inactive
-                        self.$overlayNavChild.removeClass('is-active').off();
-
-                        // .nav--trigger inactive
-                        self.$navTrigger.removeClass('is-active');
-                    });
-
-                    // no-csstransitions fallback
-                    if ($('html').hasClass('no-csstransitions')) {
-                        self.$overlayNavChild.removeClass('is-active');
-                        self.$navTrigger.removeClass('is-active');
-                    }
+            <!--  <iframe class="responsive-iframe" src="https://luisemoji.github.io" name="iframe_a " height="600px " width="100% " title="Iframe Example " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe> -->
+            <style>
+                /* Then style the iframe to fit in the container div with full height and width */
+                
+                .responsive-iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    min-height: auto;
                 }
-            });
-        },
-
-        initLayers: function() {
-            var self = this;
-            var diameter = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
-
-            self.$overlayNavChild.css({
-                scaleX: 0,
-                scaleY: 0,
-                translateZ: 0,
-                height: diameter + 'px',
-                width: diameter + 'px',
-                top: -(diameter / 2) + 'px',
-                left: -(diameter / 2) + 'px',
-            });
-        }
-    }
-
-    mobileNav.init();
-</script>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
-<script src="js/text.js"></script>
-<script src="js/home.js"></script>
-<script src="preloader.js"></script>
+            </style>
 
 
+        </div>
+
+    </div>
+
+    <div class="icon-bar">
+        <div class="icon-barfooter ">
+
+            <label for="Detalles" class="lebel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35 " height="35 " fill="transparent"><!-- home --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+                </label>
+
+            <label for="Detalles" class="lebel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35 " height="35 " fill="white" ><!-- home --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+                </label>
+
+            <label for="cris4" class="lebel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35 " height="35 "  fill="white"><!-- photo --><path d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"/></svg>
+                 </label>
+
+            <a href="guia.html" class="lebel">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35 " height="35 " version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 1015.98 1015.98"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                        <style type="text/css">
+                        <![CDATA[
+                            .fil0 {fill:none}
+                            .fil1 {fill:#E6E7E8}
+                        ]]>
+                        </style>
+                        </defs>
+                        <g id="Capa_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"/>
+                        <rect class="fil0" x="-0" y="-0" width="1015.99" height="1015.99"/>
+                        <path class="fil1" d="M300.95 751.18c3.81,-8.08 25.22,-30.43 32.07,-33.76l11.4 9.86c-4.87,6.65 -11,12.8 -17.36,19.08 -7.49,7.4 -12.42,9.21 -26.11,4.82zm-29.74 -28.71c-10.1,-17.93 7.64,-35.92 21.1,-44.43l10.6 9.82c-5.54,9.69 -23.57,27.52 -31.7,34.61zm272.59 -142.86c-7.3,10.74 -78.64,83.25 -94.51,99.9 -20.7,21.71 -48.4,58.64 -90.34,34.25l-20.09 -17.18c-1.55,-1.55 -1.79,-1.63 -3.1,-3.44 -2.17,-2.98 -1.16,-1.03 -2.46,-4.36 -6.7,-2.64 -18.66,-14.35 -23.56,-20.78 -25.91,-34 -10.82,-65.76 18.62,-89.88 10.98,5.64 31.9,37.29 42.2,24.21 9.73,-12.34 -22.68,-31.38 -27.11,-39.34l20.99 -23.31c16.51,8.16 33.87,39.38 51.62,38.19 10.37,-14.02 -2.09,-19.07 -11.51,-28.36 -8.86,-8.75 -16.58,-16.04 -25.15,-23.81 3.99,-6.94 21.85,-26.18 28.08,-28.86 8.22,6.63 34.19,39.6 43.74,27.03 10.64,-14.03 -22.53,-26.05 -30.17,-42.7l8.9 -8.68 17.28 -19.1c14.27,9.49 35.18,41.47 51.72,38.25 12.43,-20.52 -19.11,-27.03 -36.81,-52.77 5.76,-9.48 18.28,-19.27 25.45,-28.72 12.65,7.57 24.81,28.02 37.09,28.26 24.47,-4.7 -16.08,-36.46 -22.27,-41.23 6.84,-10.73 96.39,-103.95 110.25,-116.75 6.94,3.05 83.14,75.6 87.68,82.74 7.56,5.16 23.19,18.9 26.29,25.67l-182.83 190.77zm134.24 -267.32c-5.56,-2.16 -2.48,0.09 -4.66,-4.3l85.1 -90.06 8.14 7.13 15.72 13.27c-7.21,14.85 -68.53,69.91 -85.32,92.59l-14.92 -12.31c-5.95,-6.93 -1.98,-0.86 -4.06,-6.32zm194.28 -24.45c-11.97,0.76 -75.27,-64.65 -86.98,-75.89 -13.91,-13.35 -28.79,-27.01 -41.66,-39.77 -13.23,-13.1 -36.67,-30.65 -35.65,-40.89 -1.06,-2.27 -4.41,-0.22 0.68,-8.82 4.29,-7.23 12.89,-8.72 22.17,-2.15l112.23 106.93c14.94,14.33 32.71,28.58 43.23,43.42 -2.5,13.41 -3.04,15.42 -14.02,17.17zm-675.45 547.3c46.05,-48.92 25.92,-25.97 46.19,-35.6 13.6,-6.45 13.35,-18.96 33.92,-28.22 5.93,-2.67 5.24,-3.87 10.95,-5.91 42.05,24.59 54.66,-16.67 75.93,-28.54 55.99,14.29 77.76,-21.26 110.41,-55.85 29.88,-31.67 58.49,-61.83 89.2,-93.13 20.38,-20.78 170.95,-181.47 178.61,-185.34 22.49,15.58 33.84,42.05 46.84,33.6 12.12,-8.77 -2.65,-18.61 -9.87,-25.46 -16.01,-15.19 -56.68,-56.45 -68.92,-64.84 4.6,-8.84 78.92,-86.88 88.34,-93.72 14.04,8.49 35.78,34.08 50.21,46.65 21.34,18.59 52.31,6.49 55.79,-20.82 2.96,-23.26 -21.8,-38.57 -37.27,-53.42 -16.73,-16.06 -31.48,-30.26 -48.19,-46.19 -16.78,-16 -32.5,-31.31 -49.25,-47.25 -14.81,-14.1 -34.37,-40.34 -58.68,-32.62 -25.66,8.15 -31.13,37.72 -12.89,56.74 12.15,12.67 35.74,35.75 49.39,46.36l-88.66 93.08c-10.71,-6.7 -34.38,-31.53 -44.34,-41.27 -11.29,-11.04 -37.89,-41.01 -47.76,-37.06 -14.79,7.48 0.28,18.54 7.63,25.5 8.35,7.9 16.16,16.47 24.98,22.75 -8.24,12.69 -190.15,200.33 -205.82,216.76l-102.29 108.31c-29.65,41.56 0.01,60.89 -16.37,77.62 -14.8,15.13 -41.61,42.56 -17.45,67.98 -7.5,14.2 -7.34,18.06 -18.06,29.15 -8,8.28 -13.89,12.03 -16.44,25.98 -4.22,23.06 -113.34,112.54 -111.72,128.49 9,0.66 16.23,-11.13 22.67,-17.92l62.92 -65.81z"/>
+                        </g>
+                </svg>
+            </a>
+
+
+
+            <label for="Detalles" class="lebel">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35 " height="35 " fill="transparent"><!-- home --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+                </label>
+        </div>
+
+
+
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src="js/text.js "></script>
+    <script src="js/home.js "></script>
+    <script src="preloader.js "></script>
 </body>
 
 </html>

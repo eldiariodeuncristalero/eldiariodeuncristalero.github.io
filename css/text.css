@@ -1,8 +1,3 @@
-html,
-body {
-   
-}
-
 #content {
     position: relative;
     width: 90%;
@@ -14,59 +9,57 @@ article {
     padding: 1em 0;
 }
 
-h1,
-.indicator-tooltip {
+h2 .indicator-tooltip {
     margin-top: 0;
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
-}
-
-h1,
-h2,  {
-    font-size: 3em;
-    color: #806973;
 }
 
 p {
     line-height: 1.5em;
 }
 
-ul, ol, li  {
+ul,
+ol,
+li {
     list-style-type: none;
     margin: 0;
-    padding: 5px;}
+    padding: 5px;
+}
 
 a {
     text-decoration: none;
-    color:  #002266;
+    color: #002266;
     font-weight: bold;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  th, td {
+}
+
+th,
+td {
     text-align: left;
     padding: 8px;
-  }
-  
-  tr:nth-child(even){background-color: #f2f2f2}
-  
-  th {
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
     background-color: #002266;
     color: white;
-  }
+}
 
-  .border {
-    border-left: 6px solid  #002266;
+.border {
+    border-left: 6px solid #002266;
     padding: 12px
-  }
+}
 
-
-  .nota {
-    color:  #595959;
+.nota {
+    color: #595959;
 }
 
 a:hover {
@@ -75,10 +68,10 @@ a:hover {
     font-weight: bold;
 }
 
-
 .blue-text {
     color: #002266;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 .indicator {
     display: inline-block;
@@ -143,4 +136,10 @@ a:hover {
     padding: 0.5em;
     overflow: visible;
     z-index: 1;
+}
+
+.img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
