@@ -11,113 +11,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Language" content="es-mx">
     <meta http-equiv="X-UA-Compatible " content="IE=edge ">
-    <script src="js/lazysizes.min.js" rel="preload " as="script " async charset="utf-8 "></script>
-    <link rel="stylesheet " href="css/diario-style.css" media="all" as="style ">
-    <script src="js/fontawesome-1d9115e34a.js "></script>
     <script src="https://kit.fontawesome.com/1d9115e34a.js "></script>
-    <script src="js/w3.js " as="script " async charset="utf-8 "></script>
-    <script src="https://www.w3schools.com/lib/w3.js "></script>
+
+
 </head>
 
 <body>
 
-    <div class="icon-barfooter ">
-        <p onclick="openCity( 'Tokyo') "><i class="fas fa-list "></i></p>
-        <p onclick="openCity( 'Paris') "><i class="fas fa-camera "></i></p>
-        <p onclick="document.location='informacion-importante-del-cristal.html'"><i class="fas fa-camera "></i></p>
-        <p><i class="fas fa-music "></i></p>
-        <p><i class="fas fa-home "></i>
-        </p>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div class="w3-container ">
-        <div id="modal01 " class="w3-modal background " style="padding-top:0 " onclick="this.style.display='none' ">
-            <span class=" w3-xlarge w3-display-topright ">×</span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 ">
-                <img id="img01 " class="w3-image lazy img-cucu " loading="lazy ">
-                <br>
-                <br>
-                <p id="caption "></p>
-            </div>
-            <canvas id="bubble "></canvas>
-        </div>
-    </div>
-    <!-- ****************************************************************** SCRIPTS ****************************************************************** -->
-
-
-    <script>
-        if ("loading " in HTMLImageElement.prototype) {
-            // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
-            // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
-            const images = document.querySelectorAll("img.lazyload ");
-            images.forEach((img) => {
-                img.src = img.dataset.src;
-            });
-        } else {
-            // Importamos dinámicamente la libreria `lazysizes`
-            let script = document.createElement("script ");
-            script.async = true;
-            script.src =
-                "js/lazysizes.min.js ";
-            document.body.appendChild(script);
-        }
-    </script>
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01 ").src = element.src;
-            document.getElementById("modal01 ").style.display = "block ";
-            var captionText = document.getElementById("caption ");
-            captionText.innerHTML = element.alt;
-        }
-    </script>
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("* ");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html ");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found. ";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html ");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET ", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
-    </script>
-    <script>
-        includeHTML();
-    </script>
-    <script>
-        function openCity(cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(cityName).style.display = "block";
-        }
-    </script>
+    <p onclick="openCity( 'Tokyo') "><i class="fas fa-list "></i></p>
+    <p onclick="openCity( 'Paris') "><i class="fas fa-camera "></i></p>
+    <p onclick="document.location='informacion-importante-del-cristal.html'"><i class="fas fa-camera "></i></p>
+    <p><i class="fas fa-music "></i></p>
+    <p><i class="fas fa-home "></i> </p>
 
 
 </body>
