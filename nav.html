@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.png" sizes="192x192" id="favicon" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="Content-Language" content="es-mx">
-    <meta http-equiv="X-UA-Compatible " content="IE=edge ">
-    <script src="https://kit.fontawesome.com/1d9115e34a.js "></script>
-
-
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/1d9115e34a.js "></script>
+<style>
+    body {
+        margin: 0;
+    }
+    
+    .icon-bar {
+        width: 100%;
+        background-color: rgb(215, 235, 241);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .icon-bar i {
+        float: left;
+        width: 20%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+    }
+    
+    .icon-bar i:hover {
+        background-color: rgb(172, 201, 219);
+    }
+</style>
 
 <body>
 
-    <p onclick="openCity( 'Tokyo') "><i class="fas fa-list "></i></p>
-    <p onclick="openCity( 'Paris') "><i class="fas fa-camera "></i></p>
-    <p onclick="document.location='informacion-importante-del-cristal.html'"><i class="fas fa-camera "></i></p>
-    <p><i class="fas fa-music "></i></p>
-    <p><i class="fas fa-home "></i> </p>
-
+    <div class="icon-bar">
+        <i></i>
+        <i onclick="document.location='informacion-importante-del-cristal.html'">  <img src="img/pipa-meth.svg" alt="Guia" width="30" height="30"></i>
+        <i onclick="document.location='index.html'"> <img src="img/home.svg" alt="Guia" width="30" height="30"></i>
+        <i onclick="document.location='guia.html'"> <img src="img/slam-meth.svg" alt="Guia" width="30" height="30"></i>
+        <i></i>
+    </div>
 
 </body>
+
+</html>
