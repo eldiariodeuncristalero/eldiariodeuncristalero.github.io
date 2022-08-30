@@ -66,7 +66,6 @@ body {
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
     margin: 0;
-    padding-bottom: 80px;
 }
 
 .container-iframe {
@@ -178,4 +177,80 @@ a:hover {
 
 .icon-bar i:hover {
     background-color: rgb(172, 201, 219);
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/* mini */
+
+@media (max-width:500px) {
+    .susan-storm-small {
+        display: none!important
+    }
+    .video {
+        width: 290;
+        height: 190;
+    }
+}
+
+
+/* small */
+
+@media (max-width:600px) {
+    .susan-storm-small {
+        display: none!important
+    }
+    .video {
+        width: 310;
+        height: 175;
+    }
+}
+
+
+/* medium */
+
+@media (max-width:992px) and (min-width:601px) {
+    .susan-storm-medium {
+        display: none!important
+    }
+    .video {
+        width: 515;
+        height: 290;
+    }
+}
+
+
+/* large */
+
+@media (min-width:993px) {
+    .susan-storm-large {
+        display: none!important
+    }
+    .video {
+        width: 607;
+        height: 342;
+    }
 }
