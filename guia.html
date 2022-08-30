@@ -133,6 +133,58 @@ https://es.pornhub.com/users/uncristalero
             max-width: 400px;
             height: auto;
         }
+        
+        .container-leyendo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container-leyendo .chronometer {
+            width: 50%;
+            transition: all 0.5s;
+        }
+        
+        .container-leyendo .chronometer .time {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .container-leyendo .chronometer .time .counter-down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 12px;
+        }
+        
+        .container-leyendo .chronometer .time .counter-down .box {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .container-leyendo .chronometer .time .counter-down .box .left,
+        .container-leyendo .chronometer .time .counter-down .box .right {
+            position: relative;
+            font-size: 14px;
+            transition: all 0.5s;
+        }
+        
+        .container-leyendo .chronometer .time .counter-down .box .left::before,
+        .container-leyendo .chronometer .time .counter-down .box .right::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            right: 0;
+            top: 48%;
+            transition: all 0.5s;
+        }
+        
+        .container-leyendo .chronometer .time .counter-down .description {
+            transition: all 0.5s;
+        }
     </style>
 
 </head>
@@ -142,34 +194,17 @@ https://es.pornhub.com/users/uncristalero
     <!-- partial:index.partial.html -->
     <!-- Logo -->
 
-    <img src="img/slam.svg" alt="Xiiber Travel " width="35px" height="35px" onclick="document.location='index.html'" class="logo">
+    <img src="favicon-slamming.svg" alt="Xiiber Travel " width="35px" height="35px" onclick="document.location='index.html'" class="logo">
 
     <!-- partial:index.partial.html -->
     <div id="content">
 
 
         <article id="sf">
-
+            <h2>Slamming Guía para la reducción de daños asociados al uso de las drogas inyectables</h2>
             <picture>
                 <center><img src="guia/portada-slamming.webp" width="600" height="400" alt="Slamming Guía para la reducción de daños asociados al uso de las drogas inyectables" class=" responsive" loading="lazy" class="lazyload  "></center>
             </picture>
-
-
-
-            <h2>Slamming Guía para la reducción de daños asociados al uso de las drogas inyectables</h2>
-
-            <p><b>Edición</b> J. Sebastián Hernández, Grupo de Trabajo sobre Tratamientos del VIH (gTt-VIH)</p>
-            <p><b>Ilustración</b> Tony Saldaña</p>
-            <p><b>Contenidos</b> En la elaboración de los contenidos de esta guía se han utilizado los siguientes recursos: Preston A, Jones R, Linnell M. Slamming. Exchange Supplies. Mainline. 2017 / Knoops L, Bakker I, Bodegom R van, Zantkuijl P. Tina
-                & slamming: MSM, crystal meth and intravenous drug use in a sexual setting. Amsterdam, Mainline, Soa Aids Netherlands, 2015 / Hernández JS. ChemSex y Hepatitis C: Guía para profesionales sanitarios. Grupo de Trabajo sobre Tratamientos
-                del VIH. Barcelona, 2017 / Colom J (coord.). Manual d’injecció higiènica per a professionals. Departament de Sanitat i Seguretat Social. Generalitat de Catalunya. Barcelona, 2002 / Pla funcional del programa d’intercanvi de xeringues a
-                les farmàcies comunitàries. Agència de Sal</p>
-            <p><b>Sobre gTt-VIH</b> El Grupo de Trabajo sobre Tratamientos del VIH (gTt-VIH) es una organización no gubernamental con sede en Barcelona y Madrid (España) y declarada Entidad de Utilidad Pública. Para más información: <a href="https://infodrogas-vih.org/"
-                    target="_blank ">www.gtt-vih.org</a></p>
-            <p><b>Descargo de responsabilidad </b>Esta guía va dirigida a personas mayores de 18 años. Algunas imágenes explícitas podrían herir la sensibilidad de algunas personas. El Grupo de Trabajo sobre Tratamientos del VIH aborda el consumo de drogas
-                con fines sexuales desde una perspectiva de salud integral, bienestar y reducción de riesgos y daños. La información contenida en esta guía no pretende sustituir la recibida por un profesional de la salud. Las decisiones referentes a la
-                salud siempre deberían tomarse tras consultar con los profesionales sanitarios. Si eres un profesional sanitario o comunitario, distribuye esta guía solo a aquellas personas a las que el contenido pueda resultarles útil para el manejo
-                de la salud.</p>
         </article>
         <article id="nyc">
             <h2>INTRODUCCIÓN</h2>
@@ -772,12 +807,57 @@ https://es.pornhub.com/users/uncristalero
             <picture>
                 <center><img src="guia/cristal-en-la-poblacion-gay.svg" width="600" height="400" alt="Cristal en la población gay" class=" responsive" loading="lazy" class="lazyload  "></center>
             </picture>
+            <p><b>Edición</b> J. Sebastián Hernández, Grupo de Trabajo sobre Tratamientos del VIH (gTt-VIH)</p>
+            <p><b>Ilustración</b> Tony Saldaña</p>
+            <p><b>Contenidos</b> En la elaboración de los contenidos de esta guía se han utilizado los siguientes recursos: Preston A, Jones R, Linnell M. Slamming. Exchange Supplies. Mainline. 2017 / Knoops L, Bakker I, Bodegom R van, Zantkuijl P. Tina
+                & slamming: MSM, crystal meth and intravenous drug use in a sexual setting. Amsterdam, Mainline, Soa Aids Netherlands, 2015 / Hernández JS. ChemSex y Hepatitis C: Guía para profesionales sanitarios. Grupo de Trabajo sobre Tratamientos
+                del VIH. Barcelona, 2017 / Colom J (coord.). Manual d’injecció higiènica per a professionals. Departament de Sanitat i Seguretat Social. Generalitat de Catalunya. Barcelona, 2002 / Pla funcional del programa d’intercanvi de xeringues a
+                les farmàcies comunitàries. Agència de Sal</p>
+            <p><b>Sobre gTt-VIH</b> El Grupo de Trabajo sobre Tratamientos del VIH (gTt-VIH) es una organización no gubernamental con sede en Barcelona y Madrid (España) y declarada Entidad de Utilidad Pública. Para más información: <a href="https://infodrogas-vih.org/"
+                    target="_blank ">www.gtt-vih.org</a></p>
+            <p><b>Descargo de responsabilidad </b>Esta guía va dirigida a personas mayores de 18 años. Algunas imágenes explícitas podrían herir la sensibilidad de algunas personas. El Grupo de Trabajo sobre Tratamientos del VIH aborda el consumo de drogas
+                con fines sexuales desde una perspectiva de salud integral, bienestar y reducción de riesgos y daños. La información contenida en esta guía no pretende sustituir la recibida por un profesional de la salud. Las decisiones referentes a la
+                salud siempre deberían tomarse tras consultar con los profesionales sanitarios. Si eres un profesional sanitario o comunitario, distribuye esta guía solo a aquellas personas a las que el contenido pueda resultarles útil para el manejo
+                de la salud.</p>
             <picture>
                 <center><img src="guia/chemsex-meth-en-los-gays.svg" width="600" height="400" alt="Chemsex meth en los gays" class=" responsive" loading="lazy" class="lazyload  "></center>
             </picture>
             <picture>
                 <center><img src="guia/infodrogas-vih.svg" width="600" height="400" alt="infodrogas" class=" responsive" loading="lazy" class="lazyload  "></center>
             </picture>
+            <div id="container-neon">
+                <center>Gracias por tu tiempo
+                </center>
+                <div class="container-leyendo light-neon">
+                    <div id="chronometer" class="chronometer">
+                        <div class="time">
+                            <div class="counter-down">
+                                <div class="box a-light-neon">
+                                    <div id="hour-first-digit" class="left" style="font-size: 1.5em;">0</div>
+                                    <div id="hour-second-digit" class="right" style="font-size: 1.5em;">2</div>
+                                </div>
+                                <div class="description a-light-neon">hrs</div>
+                            </div>
+                            <div class="counter-down a-light-neon">
+                                <div class="box">
+                                    <div id="minute-first-digit" class="left" style="font-size: 1.5em;">0</div>
+                                    <div id="minute-second-digit" class="right" style="font-size: 1.5em;">7</div>
+                                </div>
+                                <div class="description">min</div>
+                            </div>
+                            <div class="counter-down a-light-neon">
+                                <div class="box">
+                                    <div id="second-first-digit" class="left" style="font-size: 1.5em;">1</div>
+                                    <div id="second-second-digit" class="right" style="font-size: 1.5em;">9</div>
+                                </div>
+                                <div class="description">seg</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/tiempo-que-llevas-leyendo-esto.js" rel="preload " as="script " async></script>
         </article>
     </div>
     <!-- partial -->
